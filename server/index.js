@@ -13,7 +13,7 @@ app.use(express.json());
 
 const uri = process.env.MONGODB_URI || 'mongodb://localhost:27017/roi_marketing_platform';
 
-mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(uri);
 
 const connection = mongoose.connection;
 
