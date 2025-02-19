@@ -25,7 +25,7 @@ This platform is designed to empower small business owners, particularly profess
 ## Technology Stack
 
 - **Frontend:** React (Leveraging the project structure with `src/App.jsx`, `src/main.jsx`)
-    - Chakra UI for component library and styling
+  - Chakra UI for component library and styling
 - **Build Tool:** Vite (`vite.config.js`)
 - **Styling:** CSS (`src/App.css`, `src/index.css`, Chakra UI theming)
 - **Package Manager:** npm or yarn (`package.json`)
@@ -53,26 +53,26 @@ This platform prioritizes a user-centric design to ensure ease of use and effect
 ### Page-Specific Design Considerations
 
 - **Dashboard Page (`DashboardPage.jsx`):**
-    - **Overview Focus:** Design the Dashboard to provide a high-level overview of key ROI metrics and campaign performance summaries.
-    - **Key Performance Indicators (KPIs):** Highlight essential KPIs prominently, such as total ROI, lead generation rate, and campaign effectiveness scores.
-    - **Visual Summaries:** Utilize charts and graphs to visualize overall marketing performance at a glance.
+  - **Overview Focus:** Design the Dashboard to provide a high-level overview of key ROI metrics and campaign performance summaries.
+  - **Key Performance Indicators (KPIs):** Highlight essential KPIs prominently, such as total ROI, lead generation rate, and campaign effectiveness scores.
+  - **Visual Summaries:** Utilize charts and graphs to visualize overall marketing performance at a glance.
 - **Campaigns Page (`CampaignsPage.jsx`):**
-    - **Streamlined Campaign Management:** Design intuitive interfaces for creating, editing, launching, pausing, and monitoring marketing campaigns.
-    - **Campaign Performance Snapshots:** Provide quick summaries of individual campaign performance directly within the campaign list or management interface.
-    - **Channel Integration (Future):** Plan for a scalable design that can accommodate integration with various marketing channels (social media, ads, email) in future enhancements.
+  - **Streamlined Campaign Management:** Design intuitive interfaces for creating, editing, launching, pausing, and monitoring marketing campaigns.
+  - **Campaign Performance Snapshots:** Provide quick summaries of individual campaign performance directly within the campaign list or management interface.
+  - **Channel Integration (Future):** Plan for a scalable design that can accommodate integration with various marketing channels (social media, ads, email) in future enhancements.
 - **Analytics Page (`AnalyticsPage.jsx`):**
-    - **Detailed Performance Insights:** Offer in-depth analytics and reporting on campaign performance, breaking down data by various dimensions (channel, time period, campaign type).
-    - **Customizable Reports:** Allow users to customize reports based on specific metrics and timeframes they need to analyze.
-    - **Data Filtering and Sorting:** Implement robust filtering and sorting options to enable users to drill down into specific data segments.
-    - **Data Export:** Provide options to export reports in common formats (e.g., CSV, PDF) for further analysis or sharing.
+  - **Detailed Performance Insights:** Offer in-depth analytics and reporting on campaign performance, breaking down data by various dimensions (channel, time period, campaign type).
+  - **Customizable Reports:** Allow users to customize reports based on specific metrics and timeframes they need to analyze.
+  - **Data Filtering and Sorting:** Implement robust filtering and sorting options to enable users to drill down into specific data segments.
+  - **Data Export:** Provide options to export reports in common formats (e.g., CSV, PDF) for further analysis or sharing.
 - **Goals Page (`GoalsPage.jsx`):**
-    - **Clear Goal Setting Interface:** Design a user-friendly interface for defining marketing goals (e.g., lead generation targets, ROI targets, customer acquisition goals).
-    - **Progress Tracking Visualizations:** Visually represent progress towards goals using progress bars, charts, or other visual indicators within the Goals page and potentially on the Dashboard.
-    - **Goal Management:** Enable users to manage and track multiple marketing goals simultaneously.
+  - **Clear Goal Setting Interface:** Design a user-friendly interface for defining marketing goals (e.g., lead generation targets, ROI targets, customer acquisition goals).
+  - **Progress Tracking Visualizations:** Visually represent progress towards goals using progress bars, charts, or other visual indicators within the Goals page and potentially on the Dashboard.
+  - **Goal Management:** Enable users to manage and track multiple marketing goals simultaneously.
 - **Resources Page (`ResourcesPage.jsx`):**
-    - **Organized Resource Library:** Structure the resource library (`ResourcesPage.jsx`) with clear categories and tags to facilitate easy browsing and searching.
-    - **Search and Filter Functionality:** Implement search functionality and filters to help users quickly find relevant marketing guides, templates, and best practices.
-    - **Content Preview/Summaries:** Provide previews or summaries of resources to help users determine their relevance before accessing the full content.
+  - **Organized Resource Library:** Structure the resource library (`ResourcesPage.jsx`) with clear categories and tags to facilitate easy browsing and searching.
+  - **Search and Filter Functionality:** Implement search functionality and filters to help users quickly find relevant marketing guides, templates, and best practices.
+  - **Content Preview/Summaries:** Provide previews or summaries of resources to help users determine their relevance before accessing the full content.
 
 ### Technical Considerations
 

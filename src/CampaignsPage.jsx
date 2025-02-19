@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
     Box,
     Flex,
@@ -24,31 +24,31 @@ import {
     Input,
     Select,
     Text,
-    useToast
-} from '@chakra-ui/react';
-import { FiPlus, FiEdit, FiPlay, FiPause, FiBarChart2 } from 'react-icons/fi';
+    useToast,
+} from "@chakra-ui/react";
+import { FiPlus, FiEdit, FiPlay, FiPause, FiBarChart2 } from "react-icons/fi";
 
 const campaignsData = [
     {
         id: 1,
-        name: 'Summer Promotion - Email',
-        channel: 'Email',
-        status: 'Active',
-        roi: '25%',
+        name: "Summer Promotion - Email",
+        channel: "Email",
+        status: "Active",
+        roi: "25%",
     },
     {
         id: 2,
-        name: 'Back to School - Social Media',
-        channel: 'Social Media',
-        status: 'Paused',
-        roi: '15%',
+        name: "Back to School - Social Media",
+        channel: "Social Media",
+        status: "Paused",
+        roi: "15%",
     },
     {
         id: 3,
-        name: 'Holiday Sale - Google Ads',
-        channel: 'Google Ads',
-        status: 'Draft',
-        roi: 'N/A',
+        name: "Holiday Sale - Google Ads",
+        channel: "Google Ads",
+        status: "Draft",
+        roi: "N/A",
     },
 ];
 
@@ -62,9 +62,9 @@ export function CampaignsPage() {
 
     const handleEditCampaign = (id) => {
         toast({
-            title: 'Edit Campaign',
+            title: "Edit Campaign",
             description: `Editing campaign ID: ${id}`,
-            status: 'info',
+            status: "info",
             duration: 3000,
             isClosable: true,
         });
@@ -72,9 +72,9 @@ export function CampaignsPage() {
 
     const handleLaunchCampaign = (id) => {
         toast({
-            title: 'Launch Campaign',
+            title: "Launch Campaign",
             description: `Launching campaign ID: ${id}`,
-            status: 'success',
+            status: "success",
             duration: 3000,
             isClosable: true,
         });
@@ -82,9 +82,9 @@ export function CampaignsPage() {
 
     const handlePauseCampaign = (id) => {
         toast({
-            title: 'Pause Campaign',
+            title: "Pause Campaign",
             description: `Pausing campaign ID: ${id}`,
-            status: 'warning',
+            status: "warning",
             duration: 3000,
             isClosable: true,
         });
@@ -92,9 +92,9 @@ export function CampaignsPage() {
 
     const handleViewAnalytics = (id) => {
         toast({
-            title: 'View Analytics',
+            title: "View Analytics",
             description: `Viewing analytics for campaign ID: ${id}`,
-            status: 'info',
+            status: "info",
             duration: 3000,
             isClosable: true,
         });
@@ -105,15 +105,14 @@ export function CampaignsPage() {
         const campaignName = event.target.campaignName.value;
         const campaignChannel = event.target.campaignChannel.value;
         toast({
-            title: 'Campaign Created',
+            title: "Campaign Created",
             description: `Campaign "${campaignName}" created successfully.`,
-            status: 'success',
+            status: "success",
             duration: 3000,
             isClosable: true,
         });
         onClose();
     };
-
 
     return (
         <Box p={6} bg="white" borderRadius="md" boxShadow="md">
@@ -152,7 +151,7 @@ export function CampaignsPage() {
                                             aria-label="Edit Campaign"
                                             onClick={() => handleEditCampaign(campaign.id)}
                                         />
-                                        {campaign.status === 'Draft' || campaign.status === 'Paused' ? (
+                                        {campaign.status === "Draft" || campaign.status === "Paused" ? (
                                             <IconButton
                                                 icon={<FiPlay />}
                                                 size="sm"
@@ -211,7 +210,9 @@ export function CampaignsPage() {
                                 <Button colorScheme="blue" mr={3} type="submit">
                                     Create
                                 </Button>
-                                <Button variant="ghost" onClick={onClose}>Cancel</Button>
+                                <Button variant="ghost" onClick={onClose}>
+                                    Cancel
+                                </Button>
                             </ModalFooter>
                         </form>
                     </ModalBody>
