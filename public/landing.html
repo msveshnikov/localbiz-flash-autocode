@@ -6,12 +6,12 @@
         <title>ROI Marketing Platform for Small Businesses</title>
         <style>
             body {
-                font-family: 'Arial', sans-serif;
+                font-family: monospace;
                 margin: 0;
                 padding: 0;
-                color: #495057;
-                line-height: 1.7;
-                background-color: #f8f9fa;
+                color: #d0f0c0;
+                line-height: 1.6;
+                background-color: #0a0a0a;
                 -webkit-font-smoothing: antialiased;
                 -moz-osx-font-smoothing: grayscale;
             }
@@ -23,23 +23,24 @@
             }
 
             header {
-                background-color: #ffffff;
+                background-color: #1e1e1e;
                 padding: 20px 0;
                 text-align: center;
-                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-                border-bottom: 1px solid #e9ecef;
+                border-bottom: 2px solid #66ff66;
             }
 
             header h1 {
                 margin: 0;
-                font-size: 2.8em;
-                color: #343a40;
+                font-size: 2.5em;
+                color: #66ff66;
+                text-shadow: 0 0 10px #66ff66;
             }
 
             .hero {
                 padding: 100px 0;
-                background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+                background-color: #121212;
                 text-align: center;
+                border-bottom: 2px dashed #00ffff;
             }
 
             .hero-content {
@@ -48,59 +49,67 @@
             }
 
             .hero h2 {
-                font-size: 2.7em;
+                font-size: 2.8em;
                 margin-bottom: 25px;
-                color: #343a40;
-                font-weight: 700;
-                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
+                color: #00ffff;
+                font-weight: bold;
+                text-shadow: 0 0 15px #00ffff;
             }
 
             .hero p {
-                font-size: 1.3em;
+                font-size: 1.2em;
                 margin-bottom: 40px;
-                color: #6c757d;
+                color: #d0f0c0;
+                text-shadow: 0 0 5px #d0f0c0;
             }
 
             .btn {
                 display: inline-block;
                 padding: 14px 30px;
-                background-color: #00bcd4;
-                color: white;
+                background-color: #ff00ff;
+                color: #0a0a0a;
                 text-decoration: none;
-                border-radius: 8px;
-                font-weight: 600;
+                border-radius: 5px;
+                font-weight: bold;
                 transition:
                     background-color 0.3s ease,
                     transform 0.2s ease;
-                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-                border: none;
+                box-shadow: 0 0 10px #ff00ff;
+                border: 2px solid #ff00ff;
             }
 
             .btn:hover {
-                background-color: #00acc1;
+                background-color: #cc00cc;
                 transform: translateY(-2px);
-                box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+                box-shadow: 0 0 15px #cc00cc;
+                border-color: #cc00cc;
             }
 
             .btn-primary {
-                background-color: #28a745;
+                background-color: #00ff99;
+                border-color: #00ff99;
+                box-shadow: 0 0 10px #00ff99;
             }
 
             .btn-primary:hover {
-                background-color: #218838;
+                background-color: #00cc7a;
+                box-shadow: 0 0 15px #00cc7a;
+                border-color: #00cc7a;
             }
 
             .features {
                 padding: 80px 0;
                 text-align: center;
-                background-color: #ffffff;
+                background-color: #1e1e1e;
+                border-bottom: 2px dashed #ffff33;
             }
 
             .features h2 {
                 font-size: 2.5em;
                 margin-bottom: 60px;
-                color: #343a40;
-                font-weight: 700;
+                color: #ffff33;
+                font-weight: bold;
+                text-shadow: 0 0 10px #ffff33;
             }
 
             .feature-grid {
@@ -113,41 +122,46 @@
             .feature {
                 padding: 30px;
                 border-radius: 12px;
-                background-color: #fefefe;
-                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+                background-color: #252525;
+                box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
                 transition: transform 0.2s ease-in-out;
-                border: 1px solid #eee;
+                border: 1px solid #00ffff;
             }
 
             .feature:hover {
                 transform: translateY(-8px);
-                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+                border-color: #00ffff;
             }
 
             .feature h3 {
                 font-size: 1.7em;
                 margin-top: 0;
                 margin-bottom: 15px;
-                color: #00bcd4;
-                font-weight: 600;
+                color: #00ffff;
+                font-weight: bold;
+                text-shadow: 0 0 8px #00ffff;
             }
 
             .feature p {
                 font-size: 1.1em;
-                color: #5a6268;
+                color: #c0c0c0;
+                text-shadow: 0 0 3px #c0c0c0;
             }
 
             .pricing {
                 padding: 80px 0;
-                background-color: #f8f9fa;
+                background-color: #0a0a0a;
                 text-align: center;
+                border-bottom: 2px dashed #ff6600;
             }
 
             .pricing h2 {
                 font-size: 2.5em;
                 margin-bottom: 60px;
-                color: #343a40;
-                font-weight: 700;
+                color: #ff6600;
+                font-weight: bold;
+                text-shadow: 0 0 10px #ff6600;
             }
 
             .pricing-grid {
@@ -157,37 +171,41 @@
             }
 
             .pricing-tier {
-                background-color: white;
+                background-color: #1e1e1e;
                 border-radius: 12px;
                 padding: 40px;
                 text-align: center;
-                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 0 16px rgba(255, 0, 255, 0.1);
                 transition: transform 0.2s ease-in-out;
-                border: 1px solid #e0e0e0;
+                border: 1px solid #ff00ff;
             }
             .pricing-tier:hover {
                 transform: translateY(-8px);
-                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+                box-shadow: 0 0 20px rgba(255, 0, 255, 0.2);
+                border-color: #ff00ff;
             }
 
             .pricing-tier h3 {
                 font-size: 1.9em;
                 margin-top: 0;
                 margin-bottom: 20px;
-                color: #343a40;
-                font-weight: 600;
+                color: #ff00ff;
+                font-weight: bold;
+                text-shadow: 0 0 8px #ff00ff;
             }
 
             .price {
                 font-size: 3em;
                 font-weight: bold;
-                color: #00bcd4;
+                color: #00ff99;
                 margin-bottom: 25px;
+                text-shadow: 0 0 10px #00ff99;
             }
 
             .price span {
                 font-size: 0.6em;
-                color: #777;
+                color: #c0c0c0;
+                text-shadow: 0 0 3px #c0c0c0;
             }
 
             .tier-features {
@@ -199,30 +217,33 @@
             .tier-features li {
                 margin-bottom: 12px;
                 font-size: 1.1em;
-                color: #6c757d;
+                color: #c0c0c0;
                 line-height: 1.6;
+                text-shadow: 0 0 3px #c0c0c0;
             }
 
             .cta {
                 padding: 100px 0;
-                background: linear-gradient(135deg, #b2ebf2, #e0f7fa);
+                background-color: #121212;
                 text-align: center;
+                border-bottom: 2px dashed #00ffff;
             }
 
             .cta h2 {
                 font-size: 2.8em;
                 margin-bottom: 40px;
-                color: #343a40;
-                font-weight: 700;
-                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
+                color: #00ffff;
+                font-weight: bold;
+                text-shadow: 0 0 15px #00ffff;
             }
 
             footer {
-                background-color: #343a40;
-                color: #fff;
+                background-color: #000;
+                color: #d0f0c0;
                 text-align: center;
                 padding: 25px 0;
                 font-size: 1em;
+                border-top: 2px solid #66ff66;
             }
 
             @media (max-width: 768px) {
@@ -259,17 +280,18 @@
     <body>
         <header>
             <div class="container">
-                <h1>ROI Marketing Platform</h1>
+                <h1>ROI Marketing Platform for Small Businesses</h1>
             </div>
         </header>
 
         <section class="hero">
             <div class="container hero-content">
-                <h2>Empower Your Small Business with Data-Driven Marketing</h2>
+                <h2>Data-Driven Marketing to Maximize Your ROI</h2>
                 <p>
-                    Maximize your marketing ROI with our platform designed for plumbers, lawyers,
-                    doctors, and service-based small businesses. Simplify your marketing, track
-                    performance, and grow your business.
+                    Finally, a marketing platform built for small businesses like plumbers, lawyers,
+                    and doctors. Stop wasting money on marketing that doesn't deliver. Our platform
+                    provides the tools and insights you need to ensure every dollar spent
+                    contributes to tangible business growth.
                 </p>
                 <a href="#" class="btn btn-primary">Get Started Free</a>
             </div>
@@ -282,46 +304,48 @@
                     <div class="feature">
                         <h3>ROI Tracking Dashboard</h3>
                         <p>
-                            Monitor your marketing campaign performance and calculate ROI in
-                            real-time with our centralized dashboard. Understand where your money is
-                            working best.
+                            Monitor your marketing campaign performance in real-time and easily
+                            calculate your return on investment. See exactly how your marketing
+                            efforts are impacting your bottom line.
                         </p>
                     </div>
                     <div class="feature">
                         <h3>Campaign Management Tools</h3>
                         <p>
-                            Easily create, launch, and manage marketing campaigns across various
-                            channels. Simplify complex processes with our intuitive tools.
+                            Create, launch, and manage your marketing campaigns across multiple
+                            channels from one simplified platform. No more juggling multiple tools
+                            and logins.
                         </p>
                     </div>
                     <div class="feature">
                         <h3>Performance Analytics</h3>
                         <p>
-                            Gain detailed reports and analytics to understand campaign
-                            effectiveness. Identify areas for improvement and optimize your
-                            strategies.
+                            Access detailed reports and analytics to understand what's working and
+                            what's not. Make data-driven decisions to improve your campaign
+                            effectiveness and boost ROI.
                         </p>
                     </div>
                     <div class="feature">
                         <h3>User-Friendly Interface</h3>
                         <p>
-                            Navigate our platform with ease. Designed for users of all technical
-                            levels, our interface is intuitive and straightforward.
+                            Designed with you in mind. Our intuitive and easy-to-navigate interface
+                            ensures you can focus on growing your business, not struggling with
+                            complex software.
                         </p>
                     </div>
                     <div class="feature">
-                        <h3>Goal Setting & Monitoring</h3>
+                        <h3>Goal Setting & Progress Monitoring</h3>
                         <p>
-                            Set clear marketing goals and track your progress. Stay focused and
-                            motivated as you achieve your business objectives.
+                            Set your marketing goals and track your progress towards achieving them.
+                            Stay focused and measure your success every step of the way.
                         </p>
                     </div>
                     <div class="feature">
                         <h3>Resource Library</h3>
                         <p>
-                            Access a wealth of marketing guides, templates, and best practices
-                            tailored for small businesses. Enhance your marketing knowledge and
-                            skills.
+                            Get access to marketing guides, templates, and best practices tailored
+                            for small businesses just like yours. Expand your marketing knowledge
+                            and get the support you need to succeed.
                         </p>
                     </div>
                 </div>
