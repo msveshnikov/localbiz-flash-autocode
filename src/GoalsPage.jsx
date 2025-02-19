@@ -76,7 +76,7 @@ export function GoalsPage() {
         });
     };
 
-    const handleEditGoal = (id) => {
+    const handleEditGoal = () => {
         // Implement edit functionality here
         toast({
             title: 'Edit functionality is under development.',
@@ -105,7 +105,7 @@ export function GoalsPage() {
                 <Heading size="sm">Current Goals</Heading>
                 {goals.length === 0 ? (
                     <Text color="gray.500" textAlign="center" mt={4}>
-                        No goals set yet. Click "Add Goal" to get started.
+                        No goals set yet. Click &quot;Add Goal&quot; to get started.
                     </Text>
                 ) : (
                     <VStack spacing={4} align="stretch">

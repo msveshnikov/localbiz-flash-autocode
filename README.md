@@ -40,6 +40,9 @@ expertise.
 - **Build Tool:** Vite (`vite.config.js`)
 - **Styling:** CSS (`src/App.css`, `src/index.css`, Chakra UI theming)
 - **Package Manager:** npm or yarn (`package.json`)
+- Backend - Express.js with bun and mongoose
+- Database - MongoDB
+- use ES6 imports only
 
 ## Getting Started
 
@@ -58,96 +61,199 @@ principles, page-specific functionality, and technical architecture.
 
 ### UI/UX Principles
 
-- **Intuitive Navigation:** Clear and consistent navigation across all pages, enabling users to
-  easily access different sections like Dashboard, Campaigns, Analytics, Goals, and Resources.
-  Consider a sidebar or top navigation menu for primary navigation.
-- **Clean and Uncluttered Interface:** Minimize visual clutter and prioritize essential information
-  on each page. Use whitespace effectively to improve readability and focus.
-- **User-Friendly Forms and Inputs:** Design forms for campaign creation and goal setting to be
-  straightforward and easy to understand, minimizing the learning curve for users with varying
-  technical skills.
-- **Actionable Data Visualization:** Employ charts, graphs, and progress indicators within the
-  Dashboard and Analytics pages to present ROI and performance data in an easily digestible and
-  actionable format. Focus on clarity and direct insights.
-- **Consistent Design Language:** Maintain a consistent visual style across all components and pages
-  using Chakra UI's theming capabilities. This includes typography, color palettes, and component
-  styling to create a cohesive user experience.
+- **Intuitive Navigation:**
+    - Implement a clear and consistent navigation system, likely a sidebar or top navigation menu,
+      for easy access to primary sections (Dashboard, Campaigns, Analytics, Goals, Resources).
+    - Ensure navigation is responsive and adapts well to different screen sizes.
+    - Use clear and concise labels for navigation items.
+- **Clean and Uncluttered Interface:**
+    - Adopt a minimalist design approach, focusing on essential information and actions on each
+      screen.
+    - Utilize whitespace effectively to improve readability and reduce cognitive load.
+    - Avoid unnecessary visual elements or animations that could distract users.
+- **User-Friendly Forms and Inputs:**
+    - Design forms for campaign creation, goal setting, and data input to be simple, direct, and
+      logically organized.
+    - Provide clear labels, tooltips, and input validation to guide users and prevent errors.
+    - Minimize the number of steps required to complete key tasks.
+- **Actionable Data Visualization:**
+    - Employ a variety of charts, graphs, and progress indicators (e.g., line charts, bar charts,
+      pie charts, progress bars) to present ROI and performance data visually.
+    - Focus on presenting data in a way that highlights key insights and facilitates quick
+      understanding.
+    - Ensure data visualizations are interactive where appropriate, allowing users to explore data
+      in more detail.
+- **Consistent Design Language:**
+    - Maintain a unified visual style across the platform using Chakra UI's theming capabilities.
+    - Establish a consistent typography scale, color palette, spacing, and component styling to
+      create a cohesive and professional user experience.
+    - Document design patterns and component usage for future development consistency.
+- **Mobile-First and Responsive Design:**
+    - Prioritize a mobile-first approach to ensure the platform is fully functional and visually
+      appealing on smartphones and tablets.
+    - Leverage Chakra UI's responsive features and grid system to create layouts that adapt
+      seamlessly to different screen sizes.
+    - Test the platform thoroughly on various devices and screen resolutions.
+- **Accessibility Focus (WCAG Compliance):**
+    - Adhere to WCAG guidelines to ensure the platform is accessible to users with disabilities.
+    - Utilize semantic HTML, ARIA attributes, and Chakra UI's accessibility-ready components.
+    - Provide sufficient color contrast, keyboard navigation, and screen reader compatibility.
+    - Regularly test for accessibility and iterate on improvements.
+- **Performance Considerations in UI:**
+    - Optimize UI components and interactions for speed and responsiveness.
+    - Minimize loading times for pages and data visualizations.
+    - Implement efficient data fetching and rendering strategies to ensure a smooth user experience
+      even with large datasets.
 
 ### Page-Specific Design Considerations
 
 - **Dashboard Page (`DashboardPage.jsx`):**
-    - **Overview Focus:** Design the Dashboard to provide a high-level overview of key ROI metrics
-      and campaign performance summaries.
-    - **Key Performance Indicators (KPIs):** Highlight essential KPIs prominently, such as total
-      ROI, lead generation rate, and campaign effectiveness scores.
-    - **Visual Summaries:** Utilize charts and graphs to visualize overall marketing performance at
-      a glance.
+    - **Widget-Based Layout:** Consider a widget-based layout to allow users to customize their
+      dashboard and prioritize the KPIs most relevant to them.
+    - **Key Metrics at a Glance:** Display essential KPIs prominently using large, clear typography
+      and visual cues.
+    - **Campaign Performance Summary:** Provide a summarized view of recent campaign performance,
+      highlighting successes and areas needing attention.
+    - **Quick Actions:** Include quick action buttons for frequently used tasks, such as creating a
+      new campaign or accessing analytics reports.
+    - **Interactive Charts:** Utilize interactive charts that allow users to hover for details,
+      zoom, and potentially drill down into underlying data.
 - **Campaigns Page (`CampaignsPage.jsx`):**
-    - **Streamlined Campaign Management:** Design intuitive interfaces for creating, editing,
-      launching, pausing, and monitoring marketing campaigns.
-    - **Campaign Performance Snapshots:** Provide quick summaries of individual campaign performance
-      directly within the campaign list or management interface.
-    - **Channel Integration (Future):** Plan for a scalable design that can accommodate integration
-      with various marketing channels (social media, ads, email) in future enhancements.
+    - **Campaign Listing and Management:** Display campaigns in a clear, sortable, and filterable
+      list with key performance indicators visible for each campaign.
+    - **Campaign Creation Wizard:** Implement a step-by-step campaign creation wizard to guide users
+      through the process, simplifying setup and reducing errors.
+    - **Campaign Status Indicators:** Use visual indicators (e.g., color-coded statuses, icons) to
+      clearly represent the status of each campaign (active, paused, draft, completed).
+    - **Channel Breakdown (Future):** Design the UI to accommodate different marketing channels with
+      specific settings and performance metrics for each channel.
+    - **Duplication and Templating:** Allow users to easily duplicate existing campaigns or save
+      campaign templates to streamline the creation of similar campaigns.
 - **Analytics Page (`AnalyticsPage.jsx`):**
-    - **Detailed Performance Insights:** Offer in-depth analytics and reporting on campaign
-      performance, breaking down data by various dimensions (channel, time period, campaign type).
-    - **Customizable Reports:** Allow users to customize reports based on specific metrics and
-      timeframes they need to analyze.
-    - **Data Filtering and Sorting:** Implement robust filtering and sorting options to enable users
-      to drill down into specific data segments.
-    - **Data Export:** Provide options to export reports in common formats (e.g., CSV, PDF) for
-      further analysis or sharing.
+    - **Comprehensive Reporting:** Offer a range of pre-built reports focusing on different aspects
+      of marketing performance (ROI, campaign performance, channel effectiveness, goal tracking).
+    - **Customizable Report Builder:** Provide a flexible report builder that allows users to create
+      custom reports by selecting specific metrics, dimensions, and timeframes.
+    - **Data Filtering and Segmentation:** Implement advanced filtering and segmentation options to
+      enable users to analyze specific subsets of data.
+    - **Date Range Selection:** Include intuitive date range selectors for analyzing data over
+      different periods (predefined and custom ranges).
+    - **Comparative Analysis:** Allow users to compare performance across different campaigns,
+      channels, or time periods.
+    - **Data Export Options:** Support exporting reports in various formats (CSV, PDF, Excel) for
+      offline analysis and sharing.
+    - **Visual Report Presentation:** Design reports with clear headings, labels, and visually
+      appealing charts and tables to enhance readability and understanding.
 - **Goals Page (`GoalsPage.jsx`):**
-    - **Clear Goal Setting Interface:** Design a user-friendly interface for defining marketing
-      goals (e.g., lead generation targets, ROI targets, customer acquisition goals).
-    - **Progress Tracking Visualizations:** Visually represent progress towards goals using progress
-      bars, charts, or other visual indicators within the Goals page and potentially on the
-      Dashboard.
-    - **Goal Management:** Enable users to manage and track multiple marketing goals simultaneously.
+    - **Goal Definition and Types:** Provide clear options for defining different types of marketing
+      goals (e.g., lead generation, ROI, website traffic, conversion rate).
+    - **Progress Tracking and Visualization:** Display progress towards goals using progress bars,
+      charts, and visual indicators.
+    - **Goal Timeline and Deadlines:** Allow users to set timelines and deadlines for their goals
+      and track progress against these timelines.
+    - **Goal Management and Editing:** Enable users to easily manage, edit, and update their
+      marketing goals.
+    - **Goal Achievement Notifications:** Consider implementing notifications or alerts to inform
+      users when they are approaching or have achieved their marketing goals.
 - **Resources Page (`ResourcesPage.jsx`):**
-    - **Organized Resource Library:** Structure the resource library (`ResourcesPage.jsx`) with
-      clear categories and tags to facilitate easy browsing and searching.
-    - **Search and Filter Functionality:** Implement search functionality and filters to help users
-      quickly find relevant marketing guides, templates, and best practices.
-    - **Content Preview/Summaries:** Provide previews or summaries of resources to help users
-      determine their relevance before accessing the full content.
+    - **Categorized Resource Library:** Organize resources into logical categories (e.g., guides,
+      templates, checklists, videos, blog posts) for easy browsing.
+    - **Search and Filtering:** Implement robust search functionality and filters (by category, tag,
+      topic) to help users quickly find relevant resources.
+    - **Resource Preview and Summaries:** Provide previews or summaries of resources to help users
+      assess their relevance before accessing the full content.
+    - **Resource Rating and Feedback (Future):** Consider adding a rating or feedback system to
+      allow users to evaluate the usefulness of resources and contribute to library improvement.
+    - **Download and Sharing Options:** Offer options to download resources (where applicable) and
+      share them with team members or colleagues.
 
 ### Technical Considerations
 
-- **React Component Architecture:** Develop a modular and reusable component architecture using
-  React to ensure maintainability and scalability. Structure components logically within the `src`
-  directory.
-- **Chakra UI Implementation:** Leverage Chakra UI's component library and theming system to
-  accelerate UI development, ensure responsiveness, and maintain accessibility standards.
-- **State Management:** Implement effective state management (e.g., React Context,
-  useState/useReducer for simpler scenarios, or consider libraries like Zustand or Recoil for more
-  complex state needs as the application grows) to manage application data efficiently.
-- **API Integration (Future):** Design the frontend architecture to facilitate seamless integration
-  with backend APIs for data fetching, storage, and processing as the platform evolves.
-- **Mobile Responsiveness:** Ensure full responsiveness across various screen sizes (desktops,
-  tablets, and smartphones) using Chakra UI's responsive features and flexible layouts.
-- **Accessibility (WCAG Compliance):** Adhere to WCAG (Web Content Accessibility Guidelines) to
-  ensure the platform is accessible to users with disabilities. Utilize Chakra UI's accessibility
-  features and follow best practices for ARIA attributes and semantic HTML.
-- **Performance Optimization with Vite:** Utilize Vite's optimized build process, code splitting,
-  and efficient development server to ensure fast loading times and a smooth user experience.
-  Optimize React components for performance as needed.
-- **Scalability and Maintainability:** Design the application with scalability and maintainability
-  in mind, allowing for future feature additions and platform growth without significant
-  architectural overhauls.
+- **React Component Architecture:**
+    - Adhere to a modular and reusable component architecture in React to promote maintainability,
+      scalability, and code reusability.
+    - Organize components logically within the `src` directory, potentially grouping components by
+      page or feature.
+    - Utilize functional components and hooks for state management and side effects where
+      appropriate.
+    - Implement component testing to ensure the reliability and correctness of individual
+      components.
+- **Chakra UI Implementation:**
+    - Fully leverage Chakra UI's component library and theming system to accelerate UI development
+      and maintain a consistent design language.
+    - Customize the Chakra UI theme to align with the platform's branding and visual identity.
+    - Utilize Chakra UI's responsive styles and utilities to ensure responsiveness across different
+      screen sizes.
+    - Follow Chakra UI's best practices for accessibility and component usage.
+- **State Management Strategy:**
+    - Implement a robust state management solution to efficiently manage application data.
+    - Start with `useState` and `useReducer` for component-level state management.
+    - Consider React Context for sharing state across components within specific features or
+      modules.
+    - Evaluate libraries like Zustand or Recoil for more complex global state management as the
+      application scales and the state becomes more intricate.
+- **Backend API Integration:**
+    - Design the frontend architecture to seamlessly integrate with the backend API for data
+      fetching, storage, and processing.
+    - Define clear API endpoints and data structures for communication between frontend and backend.
+    - Implement efficient data fetching strategies (e.g., data caching, pagination) to optimize
+      performance.
+    - Handle API errors and loading states gracefully in the UI to provide a smooth user experience.
+- **Mobile Responsiveness and Cross-Browser Compatibility:**
+    - Ensure full responsiveness across a wide range of devices (desktops, laptops, tablets,
+      smartphones) and screen resolutions.
+    - Test the platform on major browsers (Chrome, Firefox, Safari, Edge) and browser versions to
+      ensure cross-browser compatibility.
+    - Utilize browser developer tools for responsive design testing and debugging.
+- **Accessibility (WCAG Compliance) Implementation:**
+    - Integrate accessibility considerations throughout the development process, not just as an
+      afterthought.
+    - Conduct accessibility audits and testing using automated tools and manual testing with
+      assistive technologies.
+    - Provide alternative text for images, captions for videos, and transcripts for audio content.
+    - Ensure form elements are properly labeled and accessible to screen readers.
+- **Performance Optimization with Vite:**
+    - Leverage Vite's optimized build process, code splitting, and efficient development server to
+      ensure fast loading times and a smooth user experience.
+    - Optimize React components for performance by avoiding unnecessary re-renders, using
+      memoization techniques, and optimizing data processing.
+    - Monitor application performance and identify areas for optimization using performance
+      profiling tools.
+- **Scalability and Maintainability:**
+    - Design the application with scalability and maintainability in mind to accommodate future
+      feature additions and platform growth.
+    - Write clean, well-documented code and follow coding best practices.
+    - Implement automated testing (unit, integration, end-to-end) to ensure code quality and prevent
+      regressions.
+    - Adopt a modular architecture that allows for independent development and deployment of
+      features.
+- **Security Considerations:**
+    - Implement security best practices throughout the platform development lifecycle.
+    - Consider security aspects in both frontend and backend development.
+    - Protect user data and sensitive information by using secure data storage and transmission
+      methods.
+    - Implement input validation and sanitization to prevent common security vulnerabilities like
+      cross-site scripting (XSS) and SQL injection.
+    - Stay updated with security best practices and address potential vulnerabilities proactively.
 
 ## Future Enhancements
 
 - **Integration with Marketing Channels:** Direct integration with social media platforms,
-  advertising platforms (e.g., Google Ads), and email marketing services.
-- **Automated Reporting:** Automated generation and delivery of marketing performance reports.
-- **Personalized Recommendations:** AI-powered recommendations for campaign optimization and
-  strategy improvements.
+  advertising platforms (e.g., Google Ads), and email marketing services to streamline campaign
+  management and data collection.
+- **Automated Reporting:** Automated generation and delivery of marketing performance reports on a
+  scheduled basis, saving users time and effort.
+- **Personalized Recommendations:** AI-powered recommendations for campaign optimization, strategy
+  improvements, and resource suggestions, tailored to individual business needs and goals.
 - **Expanded Resource Library:** Continuously expand the library of marketing resources and
-  templates.
+  templates, keeping content up-to-date and relevant to the evolving marketing landscape.
 - **Customer Relationship Management (CRM) Integration:** Potential integration with CRM systems to
-  streamline lead management and customer interactions.
+  streamline lead management, customer interactions, and provide a more holistic view of the
+  customer journey.
+- **A/B Testing Tools:** Implement A/B testing capabilities for campaigns and landing pages to allow
+  users to optimize their marketing efforts through data-driven experimentation.
+- **Advanced Goal Setting:** Introduce more sophisticated goal setting options, such as revenue
+  targets, customer lifetime value goals, and industry benchmarking.
 
 ## Contributing
 
@@ -157,5 +263,4 @@ beforehand.
 
 # TODO
 
-- add features (refer to "Future Enhancements" section for specific ideas)
-- improve SEO (consider meta tags, semantic HTML, and future conte
+- add missing modules

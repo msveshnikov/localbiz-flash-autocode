@@ -5,7 +5,6 @@ import { CampaignsPage } from './CampaignsPage';
 import { AnalyticsPage } from './AnalyticsPage';
 import { GoalsPage } from './GoalsPage';
 import { ResourcesPage } from './ResourcesPage';
-import { HomePage } from './HomePage';
 
 function App() {
     return (
@@ -26,9 +25,6 @@ function App() {
                     </Box>
 
                     <Flex as="nav" mb={10} justify="space-around">
-                        {/* <Button as={Link} to="/" colorScheme="blue" variant="ghost">
-                            Home
-                        </Button> */}
                         <Button as={Link} to="/" colorScheme="blue" variant="ghost">
                             Dashboard
                         </Button>
@@ -47,7 +43,6 @@ function App() {
                     </Flex>
 
                     <Routes>
-                        {/* <Route path="/" element={<HomePage />} /> */}
                         <Route path="/" element={<DashboardPage />} />
                         <Route path="/campaigns" element={<CampaignsPage />} />
                         <Route path="/analytics" element={<AnalyticsPage />} />
