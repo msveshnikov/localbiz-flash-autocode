@@ -214,9 +214,9 @@ These are features mentioned in the README as future enhancements, planned for l
 
 - **[Prio - H] [Type - Tech] Address "TODO - add missing modules":**
     - **Description:** This is a placeholder in the README. Clarify and address specific missing
-      modules required for basic functionality. _(This item is broken down into more specific [Type
-      - Tech] tasks in Section I above - Backend API Setup, Database Integration, Frontend
-      Structure)._
+      modules required for basic functionality. \_(This item is broken down into more specific [Type
+        - Tech] tasks in Section I above - Backend API Setup, Database Integration, Frontend
+          Structure).\_
     - **Details:** Review project setup and identify any missing dependencies or configurations.
       Ensure all necessary modules for the current tech stack are in place and correctly configured.
     - **Acceptance Criteria:**
