@@ -1,15 +1,13 @@
-
 {
     "name": "roi-marketing-platform",
-    "version": "0.0.0",
+    "version": "1.0.0",
     "private": true,
     "description": "This platform is designed to empower small business owners with effective marketing strategies focused on maximizing Return On Investment (ROI).",
     "type": "module",
     "scripts": {
         "dev": "vite",
         "build": "vite build",
-        "lint": "eslint .",
-        "preview": "vite preview"
+        "lint": "eslint ."
     },
     "dependencies": {
         "@chakra-ui/icons": "^2.1.1",
