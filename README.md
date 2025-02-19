@@ -58,3 +58,9 @@ To run the application locally:
 ## Contributing
 
 Contributions are welcome! Please feel free to fork the repository and submit pull requests with improvements or new features. For major changes, please open an issue to discuss your ideas beforehand.
+
+
+# TODO
+
+- add features
+- improve SEO
