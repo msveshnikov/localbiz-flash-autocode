@@ -1,414 +1,1467 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="layout_html__x6cKi">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>ROI Marketing Platform for Small Businesses</title>
-        <style>
-            body {
-                font-family: monospace;
-                margin: 0;
-                padding: 0;
-                color: #d0f0c0;
-                line-height: 1.6;
-                background-color: #0a0a0a;
-                -webkit-font-smoothing: antialiased;
-                -moz-osx-font-smoothing: grayscale;
-            }
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="preload"
+            as="image"
+            href="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=826749&amp;theme=neutral&amp;period=daily&amp;t=1738760750034"
+        />
+        <link
+            rel="preload"
+            as="image"
+            imagesrcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FhomeScreenshot1.d4e13672.avif&amp;w=3840&amp;q=75 1x"
+            fetchpriority="high"
+        />
+        <link
+            rel="stylesheet"
+            href="https://tana.inc/_next/static/css/0f6eb1abd53824ab.css"
+            data-precedence="next"
+        />
+        <link
+            rel="stylesheet"
+            href="https://tana.inc/_next/static/css/4d199c0c56a92bf9.css"
+            data-precedence="next"
+        />
+        <link
+            rel="stylesheet"
+            href="https://tana.inc/_next/static/css/766d5264018b1021.css"
+            data-precedence="next"
+        />
+        <link
+            rel="stylesheet"
+            href="https://tana.inc/_next/static/css/edf357eb633b251d.css"
+            data-precedence="next"
+        />
+        <link
+            rel="stylesheet"
+            href="https://tana.inc/_next/static/css/128e2a1a326af4c5.css"
+            data-precedence="next"
+        />
+        <link
+            rel="stylesheet"
+            href="https://tana.inc/_next/static/css/9d3fe28811e84e1b.css"
+            data-precedence="next"
+        />
+        <link
+            rel="stylesheet"
+            href="https://tana.inc/_next/static/css/e7a3f078d712a1c1.css"
+            data-precedence="next"
+        />
+        <link
+            rel="stylesheet"
+            href="https://tana.inc/_next/static/css/24cace308e29cb9d.css"
+            data-precedence="next"
+        />
+        <link
+            rel="stylesheet"
+            href="https://tana.inc/_next/static/css/3bae93569068fd0f.css"
+            data-precedence="next"
+        />
+        <link
+            rel="stylesheet"
+            href="https://tana.inc/_next/static/css/aa99e1370fe328d0.css"
+            data-precedence="next"
+        />
+        <link
+            rel="stylesheet"
+            href="https://tana.inc/_next/static/css/98e5fa5884ee6dd7.css"
+            data-precedence="next"
+        />
+        <link
+            rel="stylesheet"
+            href="https://tana.inc/_next/static/css/acd7632232733fd6.css"
+            data-precedence="next"
+        />
+        <link
+            rel="stylesheet"
+            href="https://tana.inc/_next/static/css/7799cd213b4c088b.css"
+            data-precedence="next"
+        />
+        <link
+            rel="preload"
+            as="script"
+            fetchpriority="low"
+            href="https://tana.inc/_next/static/chunks/webpack-c75e81bc5c4ddc14.js"
+        />
 
-            .container {
-                max-width: 1200px;
-                margin: 0 auto;
-                padding: 20px;
-            }
-
-            header {
-                background-color: #1e1e1e;
-                padding: 20px 0;
-                text-align: center;
-                border-bottom: 2px solid #66ff66;
-            }
-
-            header h1 {
-                margin: 0;
-                font-size: 2.5em;
-                color: #66ff66;
-                text-shadow: 0 0 10px #66ff66;
-            }
-
-            .hero {
-                padding: 100px 0;
-                background-color: #121212;
-                text-align: center;
-                border-bottom: 2px dashed #00ffff;
-            }
-
-            .hero-content {
-                max-width: 900px;
-                margin: 0 auto;
-            }
-
-            .hero h2 {
-                font-size: 2.8em;
-                margin-bottom: 25px;
-                color: #00ffff;
-                font-weight: bold;
-                text-shadow: 0 0 15px #00ffff;
-            }
-
-            .hero p {
-                font-size: 1.2em;
-                margin-bottom: 40px;
-                color: #d0f0c0;
-                text-shadow: 0 0 5px #d0f0c0;
-            }
-
-            .btn {
-                display: inline-block;
-                padding: 14px 30px;
-                background-color: #ff00ff;
-                color: #0a0a0a;
-                text-decoration: none;
-                border-radius: 5px;
-                font-weight: bold;
-                transition:
-                    background-color 0.3s ease,
-                    transform 0.2s ease;
-                box-shadow: 0 0 10px #ff00ff;
-                border: 2px solid #ff00ff;
-            }
-
-            .btn:hover {
-                background-color: #cc00cc;
-                transform: translateY(-2px);
-                box-shadow: 0 0 15px #cc00cc;
-                border-color: #cc00cc;
-            }
-
-            .btn-primary {
-                background-color: #00ff99;
-                border-color: #00ff99;
-                box-shadow: 0 0 10px #00ff99;
-            }
-
-            .btn-primary:hover {
-                background-color: #00cc7a;
-                box-shadow: 0 0 15px #00cc7a;
-                border-color: #00cc7a;
-            }
-
-            .features {
-                padding: 80px 0;
-                text-align: center;
-                background-color: #1e1e1e;
-                border-bottom: 2px dashed #ffff33;
-            }
-
-            .features h2 {
-                font-size: 2.5em;
-                margin-bottom: 60px;
-                color: #ffff33;
-                font-weight: bold;
-                text-shadow: 0 0 10px #ffff33;
-            }
-
-            .feature-grid {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-                gap: 35px;
-                text-align: left;
-            }
-
-            .feature {
-                padding: 30px;
-                border-radius: 12px;
-                background-color: #252525;
-                box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
-                transition: transform 0.2s ease-in-out;
-                border: 1px solid #00ffff;
-            }
-
-            .feature:hover {
-                transform: translateY(-8px);
-                box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
-                border-color: #00ffff;
-            }
-
-            .feature h3 {
-                font-size: 1.7em;
-                margin-top: 0;
-                margin-bottom: 15px;
-                color: #00ffff;
-                font-weight: bold;
-                text-shadow: 0 0 8px #00ffff;
-            }
-
-            .feature p {
-                font-size: 1.1em;
-                color: #c0c0c0;
-                text-shadow: 0 0 3px #c0c0c0;
-            }
-
-            .pricing {
-                padding: 80px 0;
-                background-color: #0a0a0a;
-                text-align: center;
-                border-bottom: 2px dashed #ff6600;
-            }
-
-            .pricing h2 {
-                font-size: 2.5em;
-                margin-bottom: 60px;
-                color: #ff6600;
-                font-weight: bold;
-                text-shadow: 0 0 10px #ff6600;
-            }
-
-            .pricing-grid {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-                gap: 30px;
-            }
-
-            .pricing-tier {
-                background-color: #1e1e1e;
-                border-radius: 12px;
-                padding: 40px;
-                text-align: center;
-                box-shadow: 0 0 16px rgba(255, 0, 255, 0.1);
-                transition: transform 0.2s ease-in-out;
-                border: 1px solid #ff00ff;
-            }
-            .pricing-tier:hover {
-                transform: translateY(-8px);
-                box-shadow: 0 0 20px rgba(255, 0, 255, 0.2);
-                border-color: #ff00ff;
-            }
-
-            .pricing-tier h3 {
-                font-size: 1.9em;
-                margin-top: 0;
-                margin-bottom: 20px;
-                color: #ff00ff;
-                font-weight: bold;
-                text-shadow: 0 0 8px #ff00ff;
-            }
-
-            .price {
-                font-size: 3em;
-                font-weight: bold;
-                color: #00ff99;
-                margin-bottom: 25px;
-                text-shadow: 0 0 10px #00ff99;
-            }
-
-            .price span {
-                font-size: 0.6em;
-                color: #c0c0c0;
-                text-shadow: 0 0 3px #c0c0c0;
-            }
-
-            .tier-features {
-                list-style: none;
-                padding: 0;
-                margin-bottom: 30px;
-            }
-
-            .tier-features li {
-                margin-bottom: 12px;
-                font-size: 1.1em;
-                color: #c0c0c0;
-                line-height: 1.6;
-                text-shadow: 0 0 3px #c0c0c0;
-            }
-
-            .cta {
-                padding: 100px 0;
-                background-color: #121212;
-                text-align: center;
-                border-bottom: 2px dashed #00ffff;
-            }
-
-            .cta h2 {
-                font-size: 2.8em;
-                margin-bottom: 40px;
-                color: #00ffff;
-                font-weight: bold;
-                text-shadow: 0 0 15px #00ffff;
-            }
-
-            footer {
-                background-color: #000;
-                color: #d0f0c0;
-                text-align: center;
-                padding: 25px 0;
-                font-size: 1em;
-                border-top: 2px solid #66ff66;
-            }
-
-            @media (max-width: 768px) {
-                .hero {
-                    padding: 80px 0;
-                }
-                .hero h2 {
-                    font-size: 2.4em;
-                }
-                .hero p {
-                    font-size: 1.2em;
-                }
-                .features,
-                .pricing,
-                .cta {
-                    padding: 60px 0;
-                }
-                .features h2,
-                .pricing h2,
-                .cta h2 {
-                    font-size: 2.2em;
-                }
-                .feature-grid,
-                .pricing-grid {
-                    grid-template-columns: 1fr;
-                }
-                .feature,
-                .pricing-tier {
-                    padding: 25px;
-                }
-            }
-        </style>
+        <meta name="theme-color" content="#f5f5f7" />
+        <title>ROI Marketing Platform</title>
+        <meta
+            name="description"
+            content="Maximize your marketing ROI. The platform for small businesses to get measurable results from every marketing dollar."
+        />
+        <link rel="canonical" href="https://roi-marketing-platform.com" />
+        <link
+            rel="alternate"
+            type="application/atom+xml"
+            href="https://roi-marketing-platform.com/feed/blog/atom"
+        />
+        <meta property="og:title" content="ROI Marketing Platform" />
+        <meta
+            property="og:description"
+            content="Maximize your marketing ROI. The platform for small businesses to get measurable results from every marketing dollar."
+        />
+        <meta property="og:site_name" content="ROI Marketing Platform" />
+        <meta
+            property="og:image"
+            content="https://via.placeholder.com/1200x630?text=ROI+Marketing+Platform"
+        />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@roimarketing" />
+        <meta name="twitter:title" content="ROI Marketing Platform" />
+        <meta
+            name="twitter:description"
+            content="Maximize your marketing ROI. The platform for small businesses to get measurable results from every marketing dollar."
+        />
+        <meta
+            name="twitter:image"
+            content="https://via.placeholder.com/1200x630?text=ROI+Marketing+Platform"
+        />
+        <link rel="icon" href="/icon.svg?51e2fccf1114f3d5" type="image/svg+xml" sizes="any" />
+        <script src="/_next/static/chunks/polyfills-42372ed130431b0a.js" nomodule=""></script>
     </head>
-    <body>
-        <header>
-            <div class="container">
-                <h1>ROI Marketing Platform for Small Businesses</h1>
-            </div>
-        </header>
+    <body class="layout_body__1KmGn">
+        <div class="theme_page__Vnsy0">
+            <!--$!--><template data-dgst="BAILOUT_TO_CLIENT_SIDE_RENDERING"></template>
+            <div
+                class="theme_theme__mqT6q theme_light__SUmK1"
+                style="--theme-accent-bg: var(--color-gray-900); --theme-accent-fg: var(--theme-bg)"
+            >
+                <a href="#skip-link-target" class="skiplink_link__c7a1Q">Skip to content</a>
+                <div class="banner_banner__7defZ">
+                    Boost your Business ROI Today!
+                    <a href="#features">Discover how our platform can help you.</a>
+                    <span>🚀</span> Get started now!
+                </div>
+                <header class="client_header__ZUEmv">
+                    <div
+                        class="client_inner__LFZgE"
+                        style="backdrop-filter: blur(0px); -webkit-backdrop-filter: blur(0px)"
+                    >
+                        <div class="client_background__gYmmi" style="opacity: 0"></div>
+                        <a aria-label="Home" class="client_logo__ibTq8" href="/"
+                            ><svg
+                                width="70px"
+                                height="35px"
+                                viewBox="0 0 70 35"
+                                version="1.1"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <text
+                                    x="0"
+                                    y="25"
+                                    font-size="25"
+                                    font-weight="bold"
+                                    fill="var(--color-gray-900)"
+                                >
+                                    ROI Platform
+                                </text>
+                            </svg></a
+                        ><!--$!--><template data-dgst="BAILOUT_TO_CLIENT_SIDE_RENDERING"></template
+                        ><!--/$-->
+                    </div>
+                </header>
+                <div></div>
+                <div id="skip-link-target"></div>
+                <main>
+                    <div class="intro_container__u45Yo">
+                        <div class="container_container__qxRrp">
+                            <div class="intro_grid__NJkhy">
+                                <div class="intro_cell__eqWyG intro_content__tP5Xw">
+                                    <div class="intro_badge__cWeVk">
+                                        <span
+                                            style="
+                                                font-size: 14px;
+                                                font-weight: bold;
+                                                color: var(--color-gray-700);
+                                            "
+                                            >#1 Marketing Platform for Small Businesses</span
+                                        >
+                                    </div>
+                                    <h1 class="intro_title__pZEug">
+                                        Maximize Your Marketing <br />
+                                        ROI. Guaranteed.
+                                    </h1>
+                                    <div class="text_lg__X0iV8">
+                                        Stop wasting money on marketing that doesn't work. <br />
+                                        Get real, measurable results for your business.
+                                    </div>
+                                    <div class="button_button__AOxGw">
+                                        <!--$!--><template
+                                            data-dgst="BAILOUT_TO_CLIENT_SIDE_RENDERING"
+                                        ></template
+                                        ><a
+                                            class="button_button__Fhqr8 button_xl__fdAkN"
+                                            href="#get-started"
+                                            ><span>Get Started Free</span></a
+                                        ><!--/$-->
+                                    </div>
+                                </div>
+                                <div class="intro_cell__eqWyG intro_figure__9NDVy">
+                                    <div class="intro_background__aOFpB">
+                                        <img
+                                            alt="Dashboard view of ROI Marketing Platform showing key metrics and campaign performance."
+                                            fetchpriority="high"
+                                            width="2500"
+                                            height="1757"
+                                            decoding="async"
+                                            data-nimg="1"
+                                            style="color: transparent"
+                                            srcset="
+                                                /_next/image?url=%2F_next%2Fstatic%2Fmedia%2FhomeScreenshot1.d4e13672.avif&amp;w=3840&amp;q=75 1x
+                                            "
+                                            src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FhomeScreenshot1.d4e13672.avif&amp;w=3840&amp;q=75"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spacer_spacer__2Mxup spacer_xl__cjyZr"></div>
+                    <div class="container_container__qxRrp">
+                        <section class="logowall_logos__bRRcJ logowall_light__CQ76p">
+                            <p class="text_sm__OdRNA">
+                                Trusted by thousands of small businesses to grow their ROI
+                            </p>
+                            <ul class="logowall_images__A8tQb">
+                                <li>
+                                    <img
+                                        alt="Plumbing Co"
+                                        loading="lazy"
+                                        width="97"
+                                        height="30"
+                                        decoding="async"
+                                        data-nimg="1"
+                                        style="color: transparent"
+                                        src="https://via.placeholder.com/97x30?text=PlumbingCo"
+                                    />
+                                </li>
+                                <li class="logowall_amazon__pqV4j logowall_mobile__IiiL4">
+                                    <img
+                                        alt="Law Inc"
+                                        loading="lazy"
+                                        width="100"
+                                        height="30"
+                                        decoding="async"
+                                        data-nimg="1"
+                                        style="color: transparent"
+                                        src="https://via.placeholder.com/100x30?text=LawInc"
+                                    />
+                                </li>
+                                <li class="logowall_mobile__IiiL4">
+                                    <img
+                                        alt="MedPlus Clinic"
+                                        loading="lazy"
+                                        width="86"
+                                        height="30"
+                                        decoding="async"
+                                        data-nimg="1"
+                                        style="color: transparent"
+                                        src="https://via.placeholder.com/86x30?text=MedPlus"
+                                    />
+                                </li>
+                                <li class="logowall_mobile__IiiL4">
+                                    <img
+                                        alt="Local Auto Repair"
+                                        loading="lazy"
+                                        width="30"
+                                        height="30"
+                                        decoding="async"
+                                        data-nimg="1"
+                                        style="color: transparent"
+                                        src="https://via.placeholder.com/30x30?text=Auto"
+                                    />
+                                </li>
+                                <li class="logowall_mobile__IiiL4">
+                                    <img
+                                        alt="Home Services Pro"
+                                        loading="lazy"
+                                        width="106"
+                                        height="30"
+                                        decoding="async"
+                                        data-nimg="1"
+                                        style="color: transparent"
+                                        src="https://via.placeholder.com/106x30?text=HomePro"
+                                    />
+                                </li>
+                                <li>
+                                    <img
+                                        alt="Restaurant Group"
+                                        loading="lazy"
+                                        width="150"
+                                        height="30"
+                                        decoding="async"
+                                        data-nimg="1"
+                                        style="color: transparent"
+                                        src="https://via.placeholder.com/150x30?text=RestaurantGroup"
+                                    />
+                                </li>
+                                <li>
+                                    <img
+                                        alt="Fitness Studio"
+                                        loading="lazy"
+                                        width="85"
+                                        height="30"
+                                        decoding="async"
+                                        data-nimg="1"
+                                        style="color: transparent"
+                                        src="https://via.placeholder.com/85x30?text=Fitness"
+                                    />
+                                </li>
+                                <li>
+                                    <img
+                                        alt="Cleaning Solutions"
+                                        loading="lazy"
+                                        width="31"
+                                        height="30"
+                                        decoding="async"
+                                        data-nimg="1"
+                                        style="color: transparent"
+                                        src="https://via.placeholder.com/31x30?text=Clean"
+                                    />
+                                </li>
+                                <li class="logowall_mobile__IiiL4">
+                                    <img
+                                        alt="Salon & Spa"
+                                        loading="lazy"
+                                        width="91"
+                                        height="30"
+                                        decoding="async"
+                                        data-nimg="1"
+                                        style="color: transparent"
+                                        src="https://via.placeholder.com/91x30?text=SalonSpa"
+                                    />
+                                </li>
+                                <li class="logowall_mobile__IiiL4">
+                                    <img
+                                        alt="Dental Care Plus"
+                                        loading="lazy"
+                                        width="25"
+                                        height="31"
+                                        decoding="async"
+                                        data-nimg="1"
+                                        style="color: transparent"
+                                        src="https://via.placeholder.com/25x31?text=Dental"
+                                    />
+                                </li>
+                                <li class="logowall_mobile__IiiL4">
+                                    <img
+                                        alt="Retail Storefront"
+                                        loading="lazy"
+                                        width="73"
+                                        height="31"
+                                        decoding="async"
+                                        data-nimg="1"
+                                        style="color: transparent"
+                                        src="https://via.placeholder.com/73x31?text=Retail"
+                                    />
+                                </li>
+                                <li class="logowall_mobile__IiiL4">
+                                    <img
+                                        alt="Consulting Firm"
+                                        loading="lazy"
+                                        width="512"
+                                        height="512"
+                                        decoding="async"
+                                        data-nimg="1"
+                                        style="color: transparent"
+                                        srcset="
+                                            https://via.placeholder.com/640x640?text=Consulting   1x,
+                                            https://via.placeholder.com/1080x1080?text=Consulting 2x
+                                        "
+                                        src="https://via.placeholder.com/1080x1080?text=Consulting"
+                                    />
+                                </li>
+                                <li class="logowall_mobile__IiiL4">
+                                    <img
+                                        alt="Landscaping Services"
+                                        loading="lazy"
+                                        width="83"
+                                        height="31"
+                                        decoding="async"
+                                        data-nimg="1"
+                                        style="color: transparent"
+                                        src="https://via.placeholder.com/83x31?text=Landscaping"
+                                    />
+                                </li>
+                                <li class="logowall_doordash__CCkdW">
+                                    <img
+                                        alt="Real Estate Agency"
+                                        loading="lazy"
+                                        width="257"
+                                        height="30"
+                                        decoding="async"
+                                        data-nimg="1"
+                                        style="color: transparent"
+                                        src="https://via.placeholder.com/257x30?text=RealEstateAgency"
+                                    />
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="spacer_spacer__2Mxup spacer_xl__cjyZr"></div>
+                    <div class="divider_container__lTRAH">
+                        <div class="pattern_background__xav16">
+                            <svg
+                                width="1321"
+                                height="2249"
+                                viewBox="0 0 1321 2249"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="animation_svg__9Fjxf"
+                            >
+                                <path
+                                    d="M500.236 1317.68C505.186 1314.82 511.286 1314.82 516.236 1317.68L662.561 1402.16C667.511 1405.02 670.561 1410.3 670.561 1416.01V1584.98C670.561 1590.7 667.511 1595.98 662.561 1598.84L191.587 1870.76C186.637 1873.62 180.537 1873.62 175.587 1870.76L29.2624 1786.28C24.312 1783.42 21.2625 1778.14 21.2625 1772.42V1603.46C21.2625 1597.74 24.312 1592.46 29.2624 1589.6L500.236 1317.68Z"
+                                    pathLength="200"
+                                    class="animation_shape__BOgj_"
+                                    stroke="var(--shape)"
+                                ></path>
+                                <path
+                                    d="M500.236 193.027C505.186 190.168 511.286 190.168 516.236 193.027L662.561 277.51C667.511 280.368 670.561 285.65 670.561 291.366V460.333C670.561 466.049 667.511 471.331 662.561 474.189L191.587 746.114C186.637 748.972 180.537 748.972 175.587 746.114L29.2624 661.631C24.312 658.773 21.2625 653.491 21.2625 647.774V478.808C21.2625 473.092 24.312 467.81 29.2624 464.951L500.236 193.027Z"
+                                    pathLength="200"
+                                    class="animation_shape__BOgj_"
+                                    stroke="var(--shape)"
+                                ></path>
+                                <path
+                                    d="M824.882 755.351C829.833 752.493 835.932 752.493 840.883 755.351L987.207 839.834C992.158 842.693 995.207 847.974 995.207 853.69V1022.66C995.207 1028.37 992.158 1033.66 987.207 1036.51L516.234 1308.44C511.283 1311.3 505.184 1311.3 500.233 1308.44L353.909 1223.96C348.959 1221.1 345.909 1215.82 345.909 1210.1V1041.13C345.909 1035.42 348.959 1030.13 353.909 1027.28L824.882 755.351Z"
+                                    pathLength="200"
+                                    class="animation_shape__BOgj_"
+                                    stroke="var(--shape)"
+                                ></path>
+                                <path
+                                    d="M824.882 5.13978C829.833 2.28152 835.932 2.28153 840.883 5.13979L987.207 89.6227C992.158 92.4809 995.207 97.7628 995.207 103.479V272.446C995.207 278.162 992.158 283.444 987.207 286.302L678.558 464.506C673.608 467.364 670.558 472.646 670.558 478.362V656.566V834.771C670.558 840.487 667.509 845.769 662.558 848.627L516.234 933.11C511.283 935.968 505.184 935.968 500.233 933.11L353.909 848.627C348.959 845.769 345.909 840.487 345.909 834.771V656.566V469.125V290.921C345.909 285.204 348.959 279.922 353.909 277.064L824.882 5.13978Z"
+                                    pathLength="200"
+                                    class="animation_shape__BOgj_"
+                                    stroke="var(--shape)"
+                                ></path>
+                                <path
+                                    d="M678.477 1402.82L824.977 1318.52C829.762 1315.77 835.652 1315.77 840.437 1318.52L1311.94 1589.82C1316.74 1592.58 1319.71 1597.71 1319.71 1603.25V1781V1968V2145.75C1319.71 2151.29 1316.74 2156.41 1311.94 2159.18L1165.44 2243.47C1160.65 2246.23 1154.76 2246.23 1149.98 2243.47L1003.48 2159.18C998.67 2156.41 995.707 2151.29 995.707 2145.75V1968V1790.25C995.707 1784.35 992.553 1778.9 987.436 1775.95L678.477 1598.18C673.67 1595.41 670.707 1590.29 670.707 1584.75V1416.25C670.707 1410.71 673.67 1405.58 678.477 1402.82Z"
+                                    pathLength="200"
+                                    class="animation_shape__BOgj_"
+                                    stroke="var(--shape)"
+                                ></path>
+                                <path
+                                    d="M670.558 1772.42C670.558 1778.14 673.608 1783.42 678.558 1786.28L824.882 1870.76C829.833 1873.62 835.932 1873.62 840.883 1870.76L987.207 1786.28C992.158 1783.42 995.207 1778.14 995.207 1772.42V1228.57C995.207 1222.86 992.158 1217.58 987.207 1214.72L840.883 1130.23C835.932 1127.38 829.833 1127.38 824.882 1130.23L678.558 1214.72C673.608 1217.58 670.558 1222.86 670.558 1228.57V1772.42Z"
+                                    pathLength="200"
+                                    class="animation_blur__5jyZ7 animation_blur__5jyZ7"
+                                    stroke="url(#cl3)"
+                                ></path>
+                                <path
+                                    d="M1149.53 1308.44C1154.48 1311.3 1160.58 1311.3 1165.53 1308.44L1311.86 1223.96C1316.81 1221.1 1319.86 1215.82 1319.86 1210.1V1041.13C1319.86 1035.42 1316.81 1030.13 1311.86 1027.28L840.884 755.351C835.934 752.493 829.834 752.493 824.884 755.351L678.559 839.834C673.609 842.693 670.559 847.974 670.559 853.69V1022.66C670.559 1028.37 673.609 1033.66 678.559 1036.51L1149.53 1308.44Z"
+                                    pathLength="200"
+                                    class="animation_blur__5jyZ7 animation_blur__5jyZ7"
+                                    stroke="url(#cl3)"
+                                ></path>
+                                <path
+                                    d="M21.2593 1397.54C21.2593 1403.26 24.3088 1408.54 29.2591 1411.4L175.584 1495.88C180.534 1498.74 186.633 1498.74 191.584 1495.88L337.908 1411.4C342.859 1408.54 345.908 1403.26 345.908 1397.54V853.69C345.908 847.974 342.859 842.693 337.908 839.834L191.584 755.351C186.633 752.493 180.534 752.493 175.584 755.351L29.2591 839.834C24.3088 842.693 21.2593 847.974 21.2593 853.69V1397.54Z"
+                                    pathLength="200"
+                                    class="animation_blur__5jyZ7 animation_blur__5jyZ7"
+                                    stroke="url(#cl3)"
+                                ></path>
+                                <path
+                                    d="M670.558 1772.42C670.558 1778.14 673.608 1783.42 678.558 1786.28L824.882 1870.76C829.833 1873.62 835.932 1873.62 840.883 1870.76L987.207 1786.28C992.158 1783.42 995.207 1778.14 995.207 1772.42V1228.57C995.207 1222.86 992.158 1217.58 987.207 1214.72L840.883 1130.23C835.932 1127.38 829.833 1127.38 824.882 1130.23L678.558 1214.72C673.608 1217.58 670.558 1222.86 670.558 1228.57V1772.42Z"
+                                    pathLength="200"
+                                    class="animation_shape__BOgj_"
+                                    stroke="url(#cl3)"
+                                ></path>
+                                <path
+                                    d="M1149.53 1308.44C1154.48 1311.3 1160.58 1311.3 1165.53 1308.44L1311.86 1223.96C1316.81 1221.1 1319.86 1215.82 1319.86 1210.1V1041.13C1319.86 1035.42 1316.81 1030.13 1311.86 1027.28L840.884 755.351C835.934 752.493 829.834 752.493 824.884 755.351L678.559 839.834C673.609 842.693 670.559 847.974 670.559 853.69V1022.66C670.559 1028.37 673.609 1033.66 678.559 1036.51L1149.53 1308.44Z"
+                                    pathLength="200"
+                                    class="animation_shape__BOgj_"
+                                    stroke="url(#cl3)"
+                                ></path>
+                                <path
+                                    d="M21.2593 1397.54C21.2593 1403.26 24.3088 1408.54 29.2591 1411.4L175.584 1495.88C180.534 1498.74 186.633 1498.74 191.584 1495.88L337.908 1411.4C342.859 1408.54 345.908 1403.26 345.908 1397.54V853.69C345.908 847.974 342.859 842.693 337.908 839.834L191.584 755.351C186.633 752.493 180.534 752.493 175.584 755.351L29.2591 839.834C24.3088 842.693 21.2593 847.974 21.2593 853.69V1397.54Z"
+                                    pathLength="200"
+                                    class="animation_shape__BOgj_"
+                                    stroke="url(#cl3)"
+                                ></path>
+                                <path
+                                    d="M832.884 1150.61C846.691 1150.61 857.884 1139.42 857.884 1125.61C857.884 1111.8 846.691 1100.61 832.884 1100.61C819.077 1100.61 807.884 1111.8 807.884 1125.61C807.884 1139.42 819.077 1150.61 832.884 1150.61Z"
+                                    fill="var(--dot-outer)"
+                                ></path>
+                                <path
+                                    d="M21.261 1056.9C35.0681 1056.9 46.261 1045.71 46.261 1031.9C46.261 1018.09 35.0681 1006.9 21.261 1006.9C7.45387 1006.9 -3.73901 1018.09 -3.73901 1031.9C-3.73901 1045.71 7.45387 1056.9 21.261 1056.9Z"
+                                    fill="var(--dot-outer)"
+                                ></path>
+                                <path
+                                    d="M670.56 1244.29C684.367 1244.29 695.56 1233.1 695.56 1219.29C695.56 1205.48 684.367 1194.29 670.56 1194.29C656.753 1194.29 645.56 1205.48 645.56 1219.29C645.56 1233.1 656.753 1244.29 670.56 1244.29Z"
+                                    fill="var(--dot-outer)"
+                                ></path>
+                                <path
+                                    d="M345.912 1056.89C359.719 1056.89 370.912 1045.7 370.912 1031.89C370.912 1018.08 359.719 1006.89 345.912 1006.89C332.105 1006.89 320.912 1018.08 320.912 1031.89C320.912 1045.7 332.105 1056.89 345.912 1056.89Z"
+                                    fill="var(--dot-outer)"
+                                ></path>
+                                <path
+                                    d="M670.556 869.453C684.363 869.453 695.556 858.26 695.556 844.453C695.556 830.646 684.363 819.453 670.556 819.453C656.749 819.453 645.556 830.646 645.556 844.453C645.556 858.26 656.749 869.453 670.556 869.453Z"
+                                    fill="var(--dot-outer)"
+                                ></path>
+                                <path
+                                    d="M995.208 1244.29C1009.02 1244.29 1020.21 1233.1 1020.21 1219.29C1020.21 1205.48 1009.02 1194.29 995.208 1194.29C981.401 1194.29 970.208 1205.48 970.208 1219.29C970.208 1233.1 981.401 1244.29 995.208 1244.29Z"
+                                    fill="var(--dot-outer)"
+                                ></path>
+                                <path
+                                    d="M345.91 1434.35C359.717 1434.35 370.91 1423.16 370.91 1409.35C370.91 1395.54 359.717 1384.35 345.91 1384.35C332.103 1384.35 320.91 1395.54 320.91 1409.35C320.91 1423.16 332.103 1434.35 345.91 1434.35Z"
+                                    fill="var(--dot-outer)"
+                                ></path>
+                                <path
+                                    d="M670.561 1224.29C673.322 1224.29 675.561 1222.05 675.561 1219.29C675.561 1216.53 673.322 1214.29 670.561 1214.29C667.8 1214.29 665.561 1216.53 665.561 1219.29C665.561 1222.05 667.8 1224.29 670.561 1224.29Z"
+                                    class="animation_circle__thAva"
+                                    fill="var(--dot-inner)"
+                                ></path>
+                                <path
+                                    d="M832.879 1130.62C835.64 1130.62 837.879 1128.38 837.879 1125.62C837.879 1122.86 835.64 1120.62 832.879 1120.62C830.117 1120.62 827.879 1122.86 827.879 1125.62C827.879 1128.38 830.117 1130.62 832.879 1130.62Z"
+                                    class="animation_circle__thAva"
+                                    fill="var(--dot-inner)"
+                                ></path>
+                                <path
+                                    d="M21.2639 1036.89C24.0253 1036.89 26.2639 1034.65 26.2639 1031.89C26.2639 1029.13 24.0253 1026.89 21.2639 1026.89C18.5025 1026.89 16.2639 1029.13 16.2639 1031.89C16.2639 1034.65 18.5025 1036.89 21.2639 1036.89Z"
+                                    class="animation_circle__thAva"
+                                    fill="var(--dot-inner)"
+                                ></path>
+                                <path
+                                    d="M345.912 1036.9C348.674 1036.9 350.912 1034.66 350.912 1031.9C350.912 1029.14 348.674 1026.9 345.912 1026.9C343.151 1026.9 340.912 1029.14 340.912 1031.9C340.912 1034.66 343.151 1036.9 345.912 1036.9Z"
+                                    class="animation_circle__thAva"
+                                    fill="var(--dot-inner)"
+                                ></path>
+                                <path
+                                    d="M670.557 849.452C673.319 849.452 675.557 847.214 675.557 844.452C675.557 841.691 673.319 839.452 670.557 839.452C667.796 839.452 665.557 841.691 665.557 844.452C665.557 847.214 667.796 849.452 670.557 849.452Z"
+                                    class="animation_circle__thAva"
+                                    fill="var(--dot-inner)"
+                                ></path>
+                                <path
+                                    d="M995.209 1224.29C997.97 1224.29 1000.21 1222.05 1000.21 1219.29C1000.21 1216.53 997.97 1214.29 995.209 1214.29C992.448 1214.29 990.209 1216.53 990.209 1219.29C990.209 1222.05 992.448 1224.29 995.209 1224.29Z"
+                                    class="animation_circle__thAva"
+                                    fill="var(--dot-inner)"
+                                ></path>
+                                <path
+                                    d="M345.908 1414.35C348.669 1414.35 350.908 1412.11 350.908 1409.35C350.908 1406.59 348.669 1404.35 345.908 1404.35C343.147 1404.35 340.908 1406.59 340.908 1409.35C340.908 1412.11 343.147 1414.35 345.908 1414.35Z"
+                                    class="animation_circle__thAva"
+                                    fill="var(--dot-inner)"
+                                ></path>
+                                <path
+                                    d="M670.56 1430.31C684.367 1430.31 695.56 1419.12 695.56 1405.31C695.56 1391.5 684.367 1380.31 670.56 1380.31C656.753 1380.31 645.56 1391.5 645.56 1405.31C645.56 1419.12 656.753 1430.31 670.56 1430.31Z"
+                                    fill="var(--dot-outer)"
+                                ></path>
+                                <path
+                                    d="M670.561 1410.31C673.322 1410.31 675.561 1408.07 675.561 1405.31C675.561 1402.55 673.322 1400.31 670.561 1400.31C667.8 1400.31 665.561 1402.55 665.561 1405.31C665.561 1408.07 667.8 1410.31 670.561 1410.31Z"
+                                    class="animation_circle__thAva"
+                                    fill="var(--dot-inner)"
+                                ></path>
+                                <defs>
+                                    <linearGradient
+                                        id="cl3"
+                                        gradientUnits="objectBoundingBox"
+                                        x1="1"
+                                        y1="0"
+                                        x2="0"
+                                        y2="1"
+                                    >
+                                        <stop class="animation_stop1__HHDy0"></stop>
+                                        <stop offset="100%" class="animation_stop2__5j6gj"></stop>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="divider_content__GO2JB">
+                            <div class="divider_text__3nQaf">
+                                <div class="divider_text__3nQaf text_xxl__wJAcP">
+                                    Marketing that <br />actually pays <br />for
+                                    <em>itself</em>
+                                    <svg
+                                        stroke="currentColor"
+                                        fill="none"
+                                        stroke-width="2"
+                                        viewBox="0 0 24 24"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        aria-hidden="true"
+                                        height="1em"
+                                        width="1em"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                                        <polyline points="19 12 12 19 5 12"></polyline>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spacer_spacer__2Mxup spacer_xl__cjyZr"></div>
+                    <section id="features" class="blocks_blocks__AhcsH">
+                        <article class="blocks_block__W_v6v blocks_border___nwzA">
+                            <div class="container_container__qxRrp">
+                                <div class="blocks_grid__S3SPK">
+                                    <div class="blocks_content__e8OA1">
+                                        <div class="blocks_text__iCDd6">
+                                            <h2 class="blocks_title__lbVPK">
+                                                ROI Tracking Dashboard
+                                            </h2>
+                                            <p class="blocks_subtitle__17ea9">
+                                                See exactly where your money is going and what
+                                                results you're getting.
+                                            </p>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <button
+                                                    aria-current="true"
+                                                    type="button"
+                                                    class="button_button__Fhqr8 button_sm__R7_p3"
+                                                >
+                                                    <div class="text_md__tDISR">Real-time ROI</div>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button
+                                                    aria-current="false"
+                                                    type="button"
+                                                    class="button_button__Fhqr8 button_lime___tSEc button_sm__R7_p3"
+                                                >
+                                                    <div class="text_md__tDISR">
+                                                        Campaign Performance
+                                                    </div>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button
+                                                    aria-current="false"
+                                                    type="button"
+                                                    class="button_button__Fhqr8 button_lime___tSEc button_sm__R7_p3"
+                                                >
+                                                    <div class="text_md__tDISR">Cost Analysis</div>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button
+                                                    aria-current="false"
+                                                    type="button"
+                                                    class="button_button__Fhqr8 button_lime___tSEc button_sm__R7_p3"
+                                                >
+                                                    <div class="text_md__tDISR">
+                                                        Customizable Metrics
+                                                    </div>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                        <div>
+                                            <div class="text_md__tDISR">
+                                                Understand your marketing impact at a glance.<!-- -->
+                                                <a href="#dashboard-demo">Explore Dashboard</a>.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="blocks_media__wDpj1" data-length="1">
+                                        <div>
+                                            <img
+                                                alt="Screenshot of ROI Tracking Dashboard"
+                                                loading="lazy"
+                                                width="1300"
+                                                height="1300"
+                                                decoding="async"
+                                                data-nimg="1"
+                                                style="color: transparent"
+                                                srcset="
+                                                    /_next/image?url=https%3A%2F%2Fvia.placeholder.com%2F1300x1300%3Ftext%3DRoiDashboardScreenshot&amp;w=1920&amp;q=75 1x,
+                                                    /_next/image?url=https%3A%2F%2Fvia.placeholder.com%2F1300x1300%3Ftext%3DRoiDashboardScreenshot&amp;w=3840&amp;q=75 2x
+                                                "
+                                                src="https://via.placeholder.com/1300x1300?text=RoiDashboardScreenshot"
+                                            />
+                                        </div>
+                                        <ul class="blocks_pagination__vNw5I" aria-hidden="true">
+                                            <li>
+                                                <button type="button" aria-current="true">
+                                                    <svg
+                                                        stroke="currentColor"
+                                                        fill="currentColor"
+                                                        stroke-width="0"
+                                                        viewBox="0 0 16 16"
+                                                        height="1em"
+                                                        width="1em"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                    >
+                                                        <circle cx="8" cy="8" r="8"></circle>
+                                                    </svg>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="blocks_block__W_v6v blocks_border___nwzA">
+                            <div class="container_container__qxRrp">
+                                <div class="blocks_grid__S3SPK">
+                                    <div class="blocks_content__e8OA1">
+                                        <div class="blocks_text__iCDd6">
+                                            <h2 class="blocks_title__lbVPK">
+                                                Simplified Campaign Management
+                                            </h2>
+                                            <p class="blocks_subtitle__17ea9">
+                                                Create and manage your marketing campaigns without
+                                                the complexity.
+                                            </p>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <button
+                                                    aria-current="true"
+                                                    type="button"
+                                                    class="button_button__Fhqr8 button_sm__R7_p3"
+                                                >
+                                                    <div class="text_md__tDISR">
+                                                        Multi-channel Campaigns
+                                                    </div>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button
+                                                    aria-current="false"
+                                                    type="button"
+                                                    class="button_button__Fhqr8 button_lime___tSEc button_sm__R7_p3"
+                                                >
+                                                    <div class="text_md__tDISR">Easy Setup</div>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button
+                                                    aria-current="false"
+                                                    type="button"
+                                                    class="button_button__Fhqr8 button_lime___tSEc button_sm__R7_p3"
+                                                >
+                                                    <div class="text_md__tDISR">
+                                                        Automation Tools
+                                                    </div>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button
+                                                    aria-current="false"
+                                                    type="button"
+                                                    class="button_button__Fhqr8 button_lime___tSEc button_sm__R7_p3"
+                                                >
+                                                    <div class="text_md__tDISR">
+                                                        Performance Tracking
+                                                    </div>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                        <div>
+                                            <div class="text_md__tDISR">
+                                                Launch effective campaigns in minutes, not hours.<!-- -->
+                                                <a href="#campaign-demo">See Campaign Tools</a>.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="blocks_media__wDpj1" data-length="1">
+                                        <div>
+                                            <img
+                                                alt="Screenshot of Campaign Management Tools"
+                                                loading="lazy"
+                                                width="885"
+                                                height="885"
+                                                decoding="async"
+                                                data-nimg="1"
+                                                style="color: transparent"
+                                                srcset="
+                                                    /_next/image?url=https%3A%2F%2Fvia.placeholder.com%2F885x885%3Ftext%3DCampaignManagementScreenshot&amp;w=1080&amp;q=75 1x,
+                                                    /_next/image?url=https%3A%2F%2Fvia.placeholder.com%2F885x885%3Ftext%3DCampaignManagementScreenshot&amp;w=1920&amp;q=75 2x
+                                                "
+                                                src="https://via.placeholder.com/885x885?text=CampaignManagementScreenshot"
+                                            />
+                                        </div>
+                                        <ul class="blocks_pagination__vNw5I" aria-hidden="true">
+                                            <li>
+                                                <button type="button" aria-current="true">
+                                                    <svg
+                                                        stroke="currentColor"
+                                                        fill="currentColor"
+                                                        stroke-width="0"
+                                                        viewBox="0 0 16 16"
+                                                        height="1em"
+                                                        width="1em"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                    >
+                                                        <circle cx="8" cy="8" r="8"></circle>
+                                                    </svg>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="blocks_block__W_v6v">
+                            <div class="container_container__qxRrp">
+                                <div class="blocks_grid__S3SPK">
+                                    <div class="blocks_content__e8OA1">
+                                        <div class="blocks_text__iCDd6">
+                                            <h2 class="blocks_title__lbVPK">
+                                                Performance Analytics & Reporting
+                                            </h2>
+                                            <p class="blocks_subtitle__17ea9">
+                                                Data-driven insights to optimize your marketing
+                                                strategy.
+                                            </p>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <button
+                                                    aria-current="true"
+                                                    type="button"
+                                                    class="button_button__Fhqr8 button_sm__R7_p3"
+                                                >
+                                                    <div class="text_md__tDISR">
+                                                        Detailed Analytics
+                                                    </div>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button
+                                                    aria-current="false"
+                                                    type="button"
+                                                    class="button_button__Fhqr8 button_lime___tSEc button_sm__R7_p3"
+                                                >
+                                                    <div class="text_md__tDISR">Custom Reports</div>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button
+                                                    aria-current="false"
+                                                    type="button"
+                                                    class="button_button__Fhqr8 button_lime___tSEc button_sm__R7_p3"
+                                                >
+                                                    <div class="text_md__tDISR">
+                                                        Easy Data Export
+                                                    </div>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button
+                                                    aria-current="false"
+                                                    type="button"
+                                                    class="button_button__Fhqr8 button_lime___tSEc button_sm__R7_p3"
+                                                >
+                                                    <div class="text_md__tDISR">
+                                                        Actionable Insights
+                                                    </div>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                        <div>
+                                            <div class="text_md__tDISR">
+                                                <a href="#analytics-demo"
+                                                    >Turn data into decisions and improve your
+                                                    ROI</a
+                                                >.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="blocks_media__wDpj1" data-length="1">
+                                        <div>
+                                            <img
+                                                alt="Screenshot of Performance Analytics Dashboard"
+                                                loading="lazy"
+                                                width="1872"
+                                                height="1872"
+                                                decoding="async"
+                                                data-nimg="1"
+                                                style="color: transparent"
+                                                srcset="
+                                                    /_next/image?url=https%3A%2F%2Fvia.placeholder.com%2F1872x1872%3Ftext%3DAnalyticsDashboardScreenshot&amp;w=1920&amp;q=75 1x,
+                                                    /_next/image?url=https%3A%2F%2Fvia.placeholder.com%2F1872x1872%3Ftext%3DAnalyticsDashboardScreenshot&amp;w=3840&amp;q=75 2x
+                                                "
+                                                src="https://via.placeholder.com/1872x1872?text=AnalyticsDashboardScreenshot"
+                                            />
+                                        </div>
+                                        <ul class="blocks_pagination__vNw5I" aria-hidden="true">
+                                            <li>
+                                                <button type="button" aria-current="true">
+                                                    <svg
+                                                        stroke="currentColor"
+                                                        fill="currentColor"
+                                                        stroke-width="0"
+                                                        viewBox="0 0 16 16"
+                                                        height="1em"
+                                                        width="1em"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                    >
+                                                        <circle cx="8" cy="8" r="8"></circle>
+                                                    </svg>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+                    <div class="spacer_spacer__2Mxup spacer_xl__cjyZr"></div>
 
-        <section class="hero">
-            <div class="container hero-content">
-                <h2>Data-Driven Marketing to Maximize Your ROI</h2>
-                <p>
-                    Finally, a marketing platform built for small businesses like plumbers, lawyers,
-                    and doctors. Stop wasting money on marketing that doesn't deliver. Our platform
-                    provides the tools and insights you need to ensure every dollar spent
-                    contributes to tangible business growth.
-                </p>
-                <a href="#" class="btn btn-primary">Get Started Free</a>
-            </div>
-        </section>
+                    <div class="spacer_spacer__2Mxup spacer_xl__cjyZr"></div>
+                    <div class="container_container__qxRrp">
+                        <div class="promovideo_container__rsvkz">
+                            <div class="promovideo_video__IfK3H">
+                                <video loop="" preload="none" playsinline="" muted="">
+                                    <source
+                                        src="https://joy.videvo.net/videvo_files/video/free/2017-06/small_watermarked/170526_B1_HD_002_preview.mp4"
+                                        type="video/mp4"
+                                    /></video
+                                ><button class="promovideo_mute__wQxOf" aria-label="Mute video">
+                                    <svg
+                                        stroke="currentColor"
+                                        fill="none"
+                                        stroke-width="2"
+                                        viewBox="0 0 24 24"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        height="1em"
+                                        width="1em"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <polygon
+                                            points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"
+                                        ></polygon>
+                                        <path
+                                            d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"
+                                        ></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="promovideo_cards__nO_sC">
+                                <div class="theme_theme__mqT6q theme_light__SUmK1"><ul></ul></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spacer_spacer__2Mxup spacer_xl__cjyZr"></div>
 
-        <section class="features">
-            <div class="container">
-                <h2>Key Features</h2>
-                <div class="feature-grid">
-                    <div class="feature">
-                        <h3>ROI Tracking Dashboard</h3>
-                        <p>
-                            Monitor your marketing campaign performance in real-time and easily
-                            calculate your return on investment. See exactly how your marketing
-                            efforts are impacting your bottom line.
-                        </p>
-                    </div>
-                    <div class="feature">
-                        <h3>Campaign Management Tools</h3>
-                        <p>
-                            Create, launch, and manage your marketing campaigns across multiple
-                            channels from one simplified platform. No more juggling multiple tools
-                            and logins.
-                        </p>
-                    </div>
-                    <div class="feature">
-                        <h3>Performance Analytics</h3>
-                        <p>
-                            Access detailed reports and analytics to understand what's working and
-                            what's not. Make data-driven decisions to improve your campaign
-                            effectiveness and boost ROI.
-                        </p>
-                    </div>
-                    <div class="feature">
-                        <h3>User-Friendly Interface</h3>
-                        <p>
-                            Designed with you in mind. Our intuitive and easy-to-navigate interface
-                            ensures you can focus on growing your business, not struggling with
-                            complex software.
-                        </p>
-                    </div>
-                    <div class="feature">
-                        <h3>Goal Setting & Progress Monitoring</h3>
-                        <p>
-                            Set your marketing goals and track your progress towards achieving them.
-                            Stay focused and measure your success every step of the way.
-                        </p>
-                    </div>
-                    <div class="feature">
-                        <h3>Resource Library</h3>
-                        <p>
-                            Get access to marketing guides, templates, and best practices tailored
-                            for small businesses just like yours. Expand your marketing knowledge
-                            and get the support you need to succeed.
-                        </p>
-                    </div>
+                    <div class="spacer_spacer__2Mxup spacer_xl__cjyZr"></div>
+                    <section class="carousel_carousel__jFaTz">
+                        <article class="carousel_slide__iKHxm" aria-current="false">
+                            <div class="theme_theme__mqT6q theme_light__SUmK1">
+                                <video
+                                    aria-labelledby=":R1nb9tkq:"
+                                    aria-describedby=":R1nb9tkqH1:"
+                                    preload="none"
+                                    playsinline=""
+                                    muted=""
+                                    loop=""
+                                >
+                                    <source
+                                        src="https://joy.videvo.net/videvo_files/video/free/2016-07/small_watermarked/Thinking_Businessman_Videvo_preview.mp4"
+                                        type="video/mp4"
+                                    />
+                                </video>
+                                <div class="carousel_overlay__s_Zae"></div>
+                                <div class="carousel_title__nJkCb">
+                                    <a href="#roi-for-plumbers"
+                                        ><div id=":R1nb9tkq:" class="text_lg__X0iV8">
+                                            ROI for Plumbers
+                                        </div>
+                                        <div id=":R1nb9tkqH1:" class="text_lg__X0iV8">
+                                            Get more calls, more jobs, and higher profits.
+                                        </div></a
+                                    >
+                                </div>
+                            </div>
+                        </article>
+                        <article class="carousel_slide__iKHxm" aria-current="false">
+                            <div class="theme_theme__mqT6q theme_light__SUmK1">
+                                <video
+                                    aria-labelledby=":R2nb9tkq:"
+                                    aria-describedby=":R2nb9tkqH1:"
+                                    preload="none"
+                                    playsinline=""
+                                    muted=""
+                                    loop=""
+                                >
+                                    <source
+                                        src="https://joy.videvo.net/videvo_files/video/free/2017-07/small_watermarked/170714_01A_Sydney_Business_preview.mp4"
+                                        type="video/mp4"
+                                    />
+                                </video>
+                                <div class="carousel_overlay__s_Zae"></div>
+                                <div class="carousel_title__nJkCb">
+                                    <a href="#roi-for-lawyers"
+                                        ><div id=":R2nb9tkq:" class="text_lg__X0iV8">
+                                            ROI for Lawyers
+                                        </div>
+                                        <div id=":R2nb9tkqH1:" class="text_lg__X0iV8">
+                                            Attract more clients and grow your practice efficiently.
+                                        </div></a
+                                    >
+                                </div>
+                            </div>
+                        </article>
+                        <article class="carousel_slide__iKHxm" aria-current="false">
+                            <div class="theme_theme__mqT6q theme_light__SUmK1">
+                                <video
+                                    aria-labelledby=":R3nb9tkq:"
+                                    aria-describedby=":R3nb9tkqH1:"
+                                    preload="none"
+                                    playsinline=""
+                                    muted=""
+                                    loop=""
+                                >
+                                    <source
+                                        src="https://joy.videvo.net/videvo_files/video/free/2017-07/small_watermarked/170714_01A_Sydney_Business_02_preview.mp4"
+                                        type="video/mp4"
+                                    />
+                                </video>
+                                <div class="carousel_overlay__s_Zae"></div>
+                                <div class="carousel_title__nJkCb">
+                                    <a href="#roi-for-doctors"
+                                        ><div id=":R3nb9tkq:" class="text_lg__X0iV8">
+                                            ROI for Doctors
+                                        </div>
+                                        <div id=":R3nb9tkqH1:" class="text_lg__X0iV8">
+                                            Increase patient appointments and optimize your
+                                            marketing spend.
+                                        </div></a
+                                    >
+                                </div>
+                            </div>
+                        </article>
+                        <article class="carousel_slide__iKHxm" aria-current="false">
+                            <div class="theme_theme__mqT6q theme_light__SUmK1">
+                                <video
+                                    aria-labelledby=":R4nb9tkq:"
+                                    aria-describedby=":R4nb9tkqH1:"
+                                    preload="none"
+                                    playsinline=""
+                                    muted=""
+                                    loop=""
+                                >
+                                    <source
+                                        src="https://joy.videvo.net/videvo_files/video/free/2017-07/small_watermarked/170714_01A_Sydney_Business_03_preview.mp4"
+                                        type="video/mp4"
+                                    />
+                                </video>
+                                <div class="carousel_overlay__s_Zae"></div>
+                                <div class="carousel_title__nJkCb">
+                                    <a href="#roi-for-small-business"
+                                        ><div id=":R4nb9tkq:" class="text_lg__X0iV8">
+                                            ROI for Small Businesses
+                                        </div>
+                                        <div id=":R4nb9tkqH1:" class="text_lg__X0iV8">
+                                            Take control of your marketing and drive sustainable
+                                            growth.
+                                        </div></a
+                                    >
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+                </main>
+                <div class="container_container__qxRrp">
+                    <footer class="client_footer__mMIBx">
+                        <nav aria-label="Footer menu" data-orientation="horizontal" dir="ltr">
+                            <div class="subnav_subnav__RYUzj">
+                                <div class="subnav_links__ET_0J">
+                                    <div class="subnav_title__Qhgw_">Platform</div>
+                                    <ul>
+                                        <li>
+                                            <a href="#roi-dashboard" data-radix-collection-item=""
+                                                ><div class="icon_icon__VK_hO" aria-hidden="true">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="24"
+                                                        height="24"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="feather feather-pie-chart"
+                                                    >
+                                                        <path
+                                                            d="M21.21 15.89A10 10 0 1 1 8 2.83"
+                                                        ></path>
+                                                        <path
+                                                            d="M22 12A10 10 0 0 0 12 2v10z"
+                                                        ></path>
+                                                    </svg>
+                                                </div>
+                                                ROI Dashboard</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="#campaign-management"
+                                                data-radix-collection-item=""
+                                                ><div class="icon_icon__VK_hO" aria-hidden="true">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="24"
+                                                        height="24"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="feather feather-layers"
+                                                    >
+                                                        <polygon
+                                                            points="12 2 2 7 12 12 22 7 12 2"
+                                                        ></polygon>
+                                                        <polyline
+                                                            points="2 17 12 22 22 17"
+                                                        ></polyline>
+                                                        <polyline
+                                                            points="2 12 12 17 22 12"
+                                                        ></polyline>
+                                                    </svg>
+                                                </div>
+                                                Campaign Management</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="#analytics-reporting"
+                                                data-radix-collection-item=""
+                                                ><div class="icon_icon__VK_hO" aria-hidden="true">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="24"
+                                                        height="24"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="feather feather-bar-chart-2"
+                                                    >
+                                                        <line
+                                                            x1="18"
+                                                            y1="20"
+                                                            x2="18"
+                                                            y2="10"
+                                                        ></line>
+                                                        <line x1="12" y1="20" x2="12" y2="4"></line>
+                                                        <line x1="6" y1="20" x2="6" y2="14"></line>
+                                                    </svg>
+                                                </div>
+                                                Analytics & Reporting</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="subnav_links__ET_0J">
+                                    <div class="subnav_title__Qhgw_">Target Audience</div>
+                                    <ul>
+                                        <li>
+                                            <a
+                                                href="#roi-for-plumbers"
+                                                data-radix-collection-item=""
+                                                ><div class="icon_icon__VK_hO" aria-hidden="true">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="24"
+                                                        height="24"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="feather feather-tool"
+                                                    >
+                                                        <path
+                                                            d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
+                                                        ></path>
+                                                    </svg>
+                                                </div>
+                                                Plumbers</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="#roi-for-lawyers" data-radix-collection-item=""
+                                                ><div class="icon_icon__VK_hO" aria-hidden="true">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="24"
+                                                        height="24"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="feather feather-briefcase"
+                                                    >
+                                                        <rect
+                                                            x="2"
+                                                            y="7"
+                                                            width="20"
+                                                            height="14"
+                                                            rx="2"
+                                                            ry="2"
+                                                        ></rect>
+                                                        <path
+                                                            d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"
+                                                        ></path>
+                                                    </svg>
+                                                </div>
+                                                Lawyers</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="#roi-for-doctors" data-radix-collection-item=""
+                                                ><div class="icon_icon__VK_hO" aria-hidden="true">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="24"
+                                                        height="24"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="feather feather-plus-square"
+                                                    >
+                                                        <rect
+                                                            x="3"
+                                                            y="3"
+                                                            width="18"
+                                                            height="18"
+                                                            rx="2"
+                                                            ry="2"
+                                                        ></rect>
+                                                        <line x1="12" y1="8" x2="12" y2="16"></line>
+                                                        <line x1="8" y1="12" x2="16" y2="12"></line>
+                                                    </svg>
+                                                </div>
+                                                Doctors</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="#roi-for-small-business"
+                                                data-radix-collection-item=""
+                                                ><div class="icon_icon__VK_hO" aria-hidden="true">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="24"
+                                                        height="24"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="feather feather-shopping-cart"
+                                                    >
+                                                        <circle cx="9" cy="21" r="1"></circle>
+                                                        <circle cx="20" cy="21" r="1"></circle>
+                                                        <path
+                                                            d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+                                                        ></path>
+                                                    </svg>
+                                                </div>
+                                                Small Businesses</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="subnav_links__ET_0J">
+                                <div class="subnav_title__Qhgw_">Resources</div>
+                                <ul>
+                                    <li>
+                                        <a href="#pricing" data-radix-collection-item=""
+                                            ><svg
+                                                stroke="currentColor"
+                                                fill="none"
+                                                stroke-width="2"
+                                                viewBox="0 0 24 24"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                aria-hidden="true"
+                                                height="1em"
+                                                width="1em"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H7"
+                                                ></path></svg
+                                            ><span>Pricing</span></a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#case-studies" data-radix-collection-item=""
+                                            ><svg
+                                                stroke="currentColor"
+                                                fill="none"
+                                                stroke-width="2"
+                                                viewBox="0 0 24 24"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                aria-hidden="true"
+                                                height="1em"
+                                                width="1em"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M2 3h7a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H2v-1H9a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H2V3z"
+                                                ></path>
+                                                <path
+                                                    d="M22 3h-7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7v-1h-7a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h7V3z"
+                                                ></path></svg
+                                            ><span>Case Studies</span></a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="subnav_muted__Cp2ov"
+                                            href="#help-center"
+                                            data-radix-collection-item=""
+                                            ><svg
+                                                stroke="currentColor"
+                                                fill="none"
+                                                stroke-width="2"
+                                                viewBox="0 0 24 24"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                aria-hidden="true"
+                                                height="1em"
+                                                width="1em"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <path
+                                                    d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"
+                                                ></path>
+                                                <line
+                                                    x1="12"
+                                                    y1="17"
+                                                    x2="12.01"
+                                                    y2="17"
+                                                ></line></svg
+                                            ><span>Help Center</span></a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="subnav_muted__Cp2ov"
+                                            href="#blog"
+                                            data-radix-collection-item=""
+                                            ><svg
+                                                stroke="currentColor"
+                                                fill="none"
+                                                stroke-width="2"
+                                                viewBox="0 0 24 24"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                aria-hidden="true"
+                                                height="1em"
+                                                width="1em"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"
+                                                ></path>
+                                                <polyline points="13 2 13 9 20 9"></polyline></svg
+                                            ><span>Blog</span></a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="subnav_muted__Cp2ov"
+                                            href="#contact"
+                                            data-radix-collection-item=""
+                                            ><svg
+                                                stroke="currentColor"
+                                                fill="none"
+                                                stroke-width="2"
+                                                viewBox="0 0 24 24"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                aria-hidden="true"
+                                                height="1em"
+                                                width="1em"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                                                ></path>
+                                                <polyline points="22,6 12,13 2,6"></polyline></svg
+                                            ><span>Contact Us</span></a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="subnav_links__ET_0J">
+                                <div class="subnav_title__Qhgw_">
+                                    © ROI Marketing Platform
+                                    <!-- -->2025
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="#terms" data-radix-collection-item=""
+                                            ><svg
+                                                stroke="currentColor"
+                                                fill="none"
+                                                stroke-width="2"
+                                                viewBox="0 0 24 24"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                aria-hidden="true"
+                                                height="1em"
+                                                width="1em"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"
+                                                ></path>
+                                                <polyline points="13 2 13 9 20 9"></polyline></svg
+                                            ><span>Terms of Service</span></a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#privacy"
+                                            ><svg
+                                                stroke="currentColor"
+                                                fill="none"
+                                                stroke-width="2"
+                                                viewBox="0 0 24 24"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                aria-hidden="true"
+                                                height="1em"
+                                                width="1em"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"
+                                                ></path>
+                                                <polyline points="13 2 13 9 20 9"></polyline></svg
+                                            ><span>Privacy Policy</span></a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </footer>
                 </div>
             </div>
-        </section>
-
-        <section class="pricing">
-            <div class="container">
-                <h2>Pricing Plans</h2>
-                <div class="pricing-grid">
-                    <div class="pricing-tier">
-                        <h3>Basic</h3>
-                        <div class="price">$29<span>/month</span></div>
-                        <ul class="tier-features">
-                            <li>ROI Tracking Dashboard</li>
-                            <li>Campaign Management (Limited)</li>
-                            <li>Basic Analytics</li>
-                            <li>User-Friendly Interface</li>
-                            <li>Email Support</li>
-                        </ul>
-                        <a href="#" class="btn">Choose Basic</a>
-                    </div>
-                    <div class="pricing-tier">
-                        <h3>Pro</h3>
-                        <div class="price">$59<span>/month</span></div>
-                        <ul class="tier-features">
-                            <li>All Basic Features</li>
-                            <li>Advanced Campaign Management</li>
-                            <li>Detailed Performance Analytics</li>
-                            <li>Goal Setting & Monitoring</li>
-                            <li>Priority Email Support</li>
-                        </ul>
-                        <a href="#" class="btn">Choose Pro</a>
-                    </div>
-                    <div class="pricing-tier">
-                        <h3>Business</h3>
-                        <div class="price">$99<span>/month</span></div>
-                        <ul class="tier-features">
-                            <li>All Pro Features</li>
-                            <li>Comprehensive Analytics & Reporting</li>
-                            <li>Resource Library Access</li>
-                            <li>Dedicated Account Manager</li>
-                            <li>24/7 Premium Support</li>
-                        </ul>
-                        <a href="#" class="btn">Choose Business</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="cta">
-            <div class="container">
-                <h2>Ready to Maximize Your Marketing ROI?</h2>
-                <p>
-                    Sign up for a free trial today and see how our platform can transform your
-                    marketing efforts.
-                </p>
-                <a href="#" class="btn btn-primary">Start Your Free Trial</a>
-            </div>
-        </section>
-
-        <footer>
-            <div class="container">&copy; 2023 ROI Marketing Platform. All rights reserved.</div>
-        </footer>
+            <!--/$-->
+        </div>
+        <div id="google-noscript" aria-hidden="true">
+            <noscript
+                ><iframe
+                    src="https://www.googletagmanager.com/ns.html?id=GTM-PKTSSCG"
+                    height="0"
+                    width="0"
+                    style="display: none; visibility: hidden"
+                ></iframe
+            ></noscript>
+        </div>
     </body>
 </html>

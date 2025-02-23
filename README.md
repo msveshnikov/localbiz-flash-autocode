@@ -262,5 +262,3 @@ improvements or new features. For major changes, please open an issue to discuss
 beforehand.
 
 # TODO
-
-- make design cyper punk
